@@ -6406,7 +6406,7 @@
         "name": "Только на взятие предметов",
         "internalName": "bOnlyTakeItems",
         "internalCategory": "Repeated Activate Key",
-        "description": "Включить только на взятие предметов, пока клавиша удерживается (т.е. не открывать двери, не говорить с NPC и т.д.)."
+        "description": "Включить только на взятие предметов, пока клавиша удерживается (т.е. не открывать двери, не говорить с НПС и т.д.)."
       }
     ]
   },
@@ -6532,7 +6532,7 @@
   {
     "name": "Шанс сбивания взрывом на основе Силы",
     "internalName": "bExplosionKnockdownAvoidanceUsesStrength",
-    "description": "Высчитывать шанс избежания сбивания взрывом на основе Силы вместо Ловкости (влияет на NPC и игрока).",
+    "description": "Высчитывать шанс избежания сбивания взрывом на основе Силы вместо Ловкости (влияет на НПС и игрока).",
     "category": "Игровой процесс"
   },
   {
@@ -7119,130 +7119,130 @@
     "category": "Разное"
   },
   {
-    "name": "Разрешить дублирование привязок клавиш",
+    "name": "Allow Binding Duplicate Controls",
     "internalName": "bAllowDuplicateControlBinds",
-    "description": "Позволяет назначать несколько действий на одну кнопку в стандартном меню настроек. Базовая игра меняет привязки местами при попытке сделать это.",
-    "category": "Разное"
+    "description": "Allow binding multiple controls to the same button in the vanilla settings menu. The base game swaps the controls around when you try this.",
+    "category": "Misc"
   },
   {
-    "name": "Поврежденные ноги влияют на высоту прыжка",
+    "name": "Crippled Legs Scale Jump Height",
     "internalName": "bCrippledLegsScaleJumpHeight",
-    "description": "Масштабирует высоту прыжка при поврежденных ногах.",
-    "category": "Игровой процесс",
+    "description": "Scale jump height if legs are crippled.",
+    "category": "Gameplay",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Множитель для одной ноги",
+        "name": "One Leg Mult",
         "internalName": "fOneLegJumpHeightMult",
         "internalCategory": "Crippled Jump Height",
-        "description": "Масштаб высоты прыжка при повреждении одной ноги.",
+        "description": "Jump height scale with one crippled leg.",
         "minValue": 0,
         "maxValue": 1
       },
       {
         "type": "slider",
-        "name": "Множитель для двух ног",
+        "name": "Two Legs Mult",
         "internalName": "fTwoLegsJumpHeightMult",
         "internalCategory": "Crippled Jump Height",
-        "description": "Масштаб высоты прыжка при повреждении обеих ног.",
+        "description": "Jump height scale with one crippled leg.",
         "minValue": 0,
         "maxValue": 1
       }
     ]
   },
   {
-    "name": "Горячие клавиши вкладок Пип-Боя не закрывают меню",
+    "name": "Пип-Бой Tab Hotkeys Don't Close Menu",
     "internalName": "bPipBoyTabHotkeysDontCloseMenu",
-    "description": "Предотвращает закрытие Пип-Боя при использовании горячих клавиш вкладок (по умолчанию F1/F2/F3).",
-    "category": "Разное"
+    "description": "Prevent the Пип-Бой tab hotkeys (F1/F2/F3 by default) closing the Пип-Бой.",
+    "category": "Misc"
   },
   {
-    "name": "Меню статистики показывает модификаторы Навыков/SPECIAL",
+    "name": "Stats Menu Show Skill/SPECIAL Modifiers",
     "internalName": "bMoreDetailedStatsMenu",
-    "description": "Показывать величину модификатора в (+) и (-) для навыков, а также значения навыков/SPECIAL выше 10/100. Настоятельно рекомендуется использоватьVUI+.",
-    "category": "Меню",
+    "description": "Show the value modifier amount in the (+) and (-) for skills, and show skills/specials above 10/100. VUI+ strongly recommended.",
+    "category": "Menus",
     "subsettings": [
       {
-        "name": "Показывать значения выше пределов",
+        "name": "Show values above their limits",
         "internalName": "bShowValuesAboveLimits",
         "internalCategory": "Improved Stats Menu",
-        "description": "Показывать SPECIAL выше 10 и навыки выше 100."
+        "description": "Show SPECIALs above 10 and skills above 100."
       }
     ]
   },
   {
-    "name": "Смертельные попадания увеличивают значения испытаний для конечностей",
+    "name": "Lethal Hits Increase Limb Challenges",
     "internalName": "bLethalHitsIncreaseLimbChallenges",
-    "description": "Повышает прогресс испытаний на калечение/отброс конечностей, даже если атака убила цель.",
-    "category": "Разное"
+    "description": "Increase limb cripple/knockback challenges even if the attack killed the target.",
+    "category": "Misc"
   },
   {
-    "name": "Перезарядка без патронов переключает типы боеприпасов",
+    "name": "Reloading With No Ammo Swaps Ammo Types",
     "internalName": "bReloadingWithNoAmmoSwapsAmmoTypes",
-    "description": "Меняет типы боеприпасов при перезарядке оружия с пустым магазином и при загрузке сохранения без патронов.",
-    "category": "Качество жизни"
+    "description": "Change ammo types when reloading with no ammo, and when loading a save with no ammo.",
+    "category": "Quality-of-life"
   },
   {
-    "name": "Настройка времени затухания терминала",
+    "name": "Custom Terminal Fade Time",
     "internalName": "bTerminalFadeTime",
-    "description": "Настраивает время затухания меню терминала при закрытии с клавиатуры/контроллера.",
-    "category": "Разное",
+    "description": "Adjust the time the terminal menu fades out when closed with keyboard/controller.",
+    "category": "Misc",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Длина затухания",
+        "name": "Fade Length",
         "internalName": "fFadeLength",
         "internalCategory": "Terminal Close Fade",
-        "description": "Время затухания меню терминала при закрытии с клавиатуры/контроллера.",
+        "description": "Length of time the terminal menu fades for when closed with keyboard/controller.",
         "minValue": 0,
         "maxValue": 1
       }
     ]
   },
   {
-    "name": "Иконка сохранения для 'Продолжить' в главном меню",
+    "name": "Main Menu Continue Save Icon",
     "internalName": "bMainMenuContinueIcon",
-    "description": "Показывать изображение загружаемого сохранения при наведении на 'Продолжить' в главном меню.",
-    "category": "Меню"
+    "description": "Show the image of the save to load when 'Continue' is hovered at the main menu.",
+    "category": "Menus"
   },
   {
-    "name": "Вход в VATS не достает оружие",
+    "name": "Entering VATS Doesn't Unholster Weapon",
     "internalName": "bEnteringVATSDoesntUnholsterWeapon",
-    "description": "Не доставать оружие при использовании VATS без выбора цели.",
-    "category": "Качество жизни"
+    "description": "Don't unholster weapon when using VATS without selecting a target.",
+    "category": "Quality-of-life"
   },
   {
-    "name": "Силовая броня предотвращает кровь на экране",
+    "name": "Power Armor Prevents Screen Blood",
     "internalName": "bPowerArmorPreventsScreenBlood",
-    "description": "Предотвращать эффект крови на экране, если пораженная часть тела в силовой броне.",
-    "category": "Разное"
+    "description": "Prevent screen blood effect if your hit body part is wearing power armor.",
+    "category": "Misc"
   },
   {
-    "name": "Силовая броня масштабирует урон по конечностям",
+    "name": "Power Armor Scales Limb Damage",
     "internalName": "bPowerArmorScalesLimbDamage",
-    "description": "Масштабирует урон по конечностям при попаданиях по силовой броне для игрока и NPC.",
-    "category": "Игровой процесс",
+    "description": "Scale limb damage for hits on power armor for the player and NPC.",
+    "category": "Gameplay",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Множитель головы",
+        "name": "Head Scale",
         "internalName": "fHeadScale",
         "internalCategory": "Power Armor Scales Limb Damage",
-        "description": "Множитель урона по голове при ношении шлема силовой брони.",
+        "description": "Scale applied to head damage while wearing a power armor helmet.",
         "minValue": 0,
         "maxValue": 1
       },
       {
         "type": "slider",
-        "name": "Множитель конечностей",
+        "name": "Limb Scale",
         "internalName": "fLimbScale",
         "internalCategory": "Power Armor Scales Limb Damage",
-        "description": "Множитель урона по конечностям при ношении силовой брони.",
+        "description": "Scale applied to limb damage while wearing a power armor helmet.",
         "minValue": 0,
         "maxValue": 1
       },
       {
-        "name": "Режим",
+        "name": "Mode",
         "internalName": "iMode",
         "internalCategory": "Power Armor Scales Limb Damage",
         "options": [
@@ -7251,11 +7251,11 @@
             "value": 1
           },
           {
-            "name": "Игрок",
+            "name": "Player",
             "value": 2
           },
           {
-            "name": "Все",
+            "name": "All",
             "value": 3
           }
         ]
@@ -7263,333 +7263,333 @@
     ]
   },
   {
-    "name": "Предотвращать попадания по зачехленному оружию",
+    "name": "Prevent Hitting Holstered Weapons",
     "internalName": "bPreventHittingHolsteredWeapons",
-    "description": "Заставлять снаряды проходить сквозь зачехленное оружие NPC.",
-    "category": "Игровой процесс",
+    "description": "Make projectiles pass through NPC holstered weapons.",
+    "category": "Gameplay",
     "subsettings": [
       {
-        "name": "Игнорировать попадания по доставленному оружию",
+        "name": "Prevent hitting unholstered weapons",
         "internalName": "bIgnoreUnholstered",
         "internalCategory": "Shoot Through Weapons",
-        "description": "Игнорировать попадания по доставленному оружию (предотвращает разоружение)."
+        "description": "Ignore hitting unholstered weapons (prevents disarming)."
       },
       {
-        "name": "Разрешить попадания в VATS",
+        "name": "Allow Hits In VATS",
         "internalName": "bAllowHitsInVATS",
         "internalCategory": "Shoot Through Weapons",
-        "description": "Разрешить попадания по оружию в VATS."
+        "description": "Allow hitting weapons in VATS."
       }
     ]
   },
   {
-    "name": "Скрывать вес и стоимость квестовых предметов",
+    "name": "Hide Quest Item Weight And Value",
     "internalName": "bHideQuestItemWeightAndValue",
-    "description": "Скрывать вес и стоимость квестовых предметов и ключей в Пип-Бое.",
-    "category": "Меню"
+    "description": "Hide the weight and value of quest items and keys in the Пип-Бой.",
+    "category": "Menus"
   },
   {
-    "name": "NPC слышат взрывы мин",
+    "name": "NPC Hear Mines Explode",
     "internalName": "bNPCsDetectMineExplosions",
-    "description": "Оповещать ближайших NPC при взрыве мин.",
-    "category": "Игровой процесс"
+    "description": "Alert nearby NPC when mines explode.",
+    "category": "Gameplay"
   },
   {
-    "name": "Звук боли при падении с поврежденными ногами",
+    "name": "Crippled Limb Pain Sound When Falling",
     "internalName": "bCrippledLimbsPlayPainSoundWhenFalling",
-    "description": "Воспроизводить звуки боли при падении с поврежденными ногами.",
-    "category": "Игровой процесс",
+    "description": "Play pain sounds when falling with crippled legs.",
+    "category": "Gameplay",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Порог высоты",
+        "name": "Height Threshold",
         "internalName": "fHeightThreshold",
         "internalCategory": "Crippled Limb Fall Pain Sound",
-        "description": "Расстояние падения для воспроизведения звука боли, если повреждена хотя бы одна нога.",
+        "description": "Distance fallen to play pain sound/imod if either leg is crippled.",
         "minValue": 0,
         "maxValue": 1000
       }
     ]
   },
   {
-    "name": "Терминал: помечать прочитанные заметки серым",
+    "name": "Terminal Grey Read Notes",
     "internalName": "bTerminalGreyReadNotes",
-    "description": "Делать заметки серыми после прочтения в терминале (не задним числом).",
-    "category": "Меню"
+    "description": "Grays notes after reading them in the terminal (not retroactive).",
+    "category": "Menus"
   },
   {
-    "name": "Сортировать подходящие боеприпасы вверх инвентаря",
+    "name": "Sort Equipable Ammo To Top Of Inventory",
     "internalName": "bSortEquipableAmmo",
-    "description": "Сортирует подходящие боеприпасы вверху инвентаря Пип-Боя. Несовместимо с yUI/ySI.",
-    "category": "Меню"
+    "description": "Sorts usable ammo to the top of the Пип-Бой inventory. Not compatible with yUI/ySI.",
+    "category": "Menus"
   },
   {
-    "name": "Скрыть сообщения о получении крышек",
+    "name": "Hide Caps Added Messages",
     "internalName": "bHideCapsAddedMessages",
-    "description": "Скрывать сообщения о добавлении крышек.",
+    "description": "Hide item added messages for caps.",
     "category": "HUD"
   },
   {
-    "name": "Урон от взрыва влияет на расчленение 'Кровавая баня'",
+    "name": "Splash Damage Affects Bloody Mess Gibbing",
     "internalName": "bSplashDamageTorsoGibbing",
-    "description": "Дает урону от взрывного радиуса шанс вызвать взрыв торса в стиле 'Кровавая баня'.",
-    "category": "Разное"
+    "description": "Gives projectile splash damage a chance to trigger bloody mess torso explosions.",
+    "category": "Misc"
   },
   {
-    "name": "Бесплатный выбор 'Дикая пустошь'",
+    "name": "Free Wild Wasteland",
     "internalName": "bFreeWildWasteland",
-    "description": "Позволяет выбрать 'Дикие пустоши' без траты очка черты.",
-    "category": "Игровой процесс"
+    "description": "Allow selecting wild wasteland without using a trait point.",
+    "category": "Gameplay"
   },
   {
-    "name": "Инвертировать ось X камеры",
+    "name": "Invert Camera X",
     "internalName": "bInvertCameraX",
-    "description": "Инвертировать движение камеры по оси X.",
-    "category": "Разное"
+    "description": "Invert the camera X movement.",
+    "category": "Misc"
   },
   {
-    "name": "Очистка ближайшего маркера игрока",
+    "name": "Clear Nearby Player Marker",
     "internalName": "bClearNearbyPlayerMarker",
-    "description": "Удалять поставленный игроком маркер при приближении.",
-    "category": "Игровой процесс",
+    "description": "Remove player placed marker when nearby.",
+    "category": "Gameplay",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Дистанция",
+        "name": "Distance",
         "internalName": "fDistance",
         "internalCategory": "Clear Nearby Player Marker",
-        "description": "Дистанция удаления маркера.",
+        "description": "Distance to remove the marker.",
         "minValue": 0,
         "maxValue": 10000
       }
     ]
   },
   {
-    "name": "Легкий шаг влияет на напарников",
+    "name": "Light Step Affects Companions",
     "internalName": "bLightStepAffectsCompanions",
-    "description": "Давать напарникам 'Легкий шаг', если у игрока есть перк.",
-    "category": "Игровой процесс"
+    "description": "Give companions light step if player has the perk.",
+    "category": "Gameplay"
   },
   {
-    "name": "Отображение ОД в VATS учитывает стоимость перезарядки",
+    "name": "VATS AP Display Includes Reload Cost",
     "internalName": "bVATSAPDisplayIncludesReloadCost",
-    "description": "Учитывать стоимость перезарядки (gamesetting fActionPointsReload) при постановке в очередь атаки VATS, которая вызовет перезарядку.",
-    "category": "Меню"
+    "description": "Include the cost of a reload (fActionPointsReload gamesetting) when queuing a VATS attack that will cause a reload.",
+    "category": "Menus"
   },
   {
-    "name": "Пропуск замков при высоком навыке",
+    "name": "Skip Locks At High Skill",
     "internalName": "bSkipVeryEasyLocksAtMaxSkill",
-    "description": "Автоматически взламывать замки, если удоволетворены настроенные условия.",
-    "category": "Игровой процесс",
+    "description": "Automatically unlock locks when lockpick skill is high enough.",
+    "category": "Gameplay",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Множитель награды",
+        "name": "Reward Scale",
         "internalName": "fRewardXPScale",
         "internalCategory": "Auto Unlock Locks",
-        "description": "Множитель, применяемый к стандартному опыту в зависимости от уровня замка.",
+        "description": "Scale applied to the vanilla XP gained based on the lock level.",
         "minValue": 0,
         "maxValue": 2
       },
       {
         "type": "slider",
-        "name": "Порог",
+        "name": "Delta",
         "internalName": "iThreshold",
         "internalCategory": "Auto Unlock Locks",
-        "description": "Необходимый запас навыка сверх уровня замка для автоотмычки.",
+        "description": "Required additional skill above the lock level to automatically unlock it.",
         "minValue": 0,
         "maxValue": 100
       }
     ]
   },
   {
-    "name": "Многопоточное меню взлома",
+    "name": "Multithreaded Hacking Menu",
     "internalName": "bMultithreadedHackingMenu",
-    "description": "Многопоточная подготовка списка слов для снижения лагов при взломе терминала.",
-    "category": "Разное"
+    "description": "Multithreads the setup of the hacking words list to reduce lag when hacking a terminal.",
+    "category": "Misc"
   },
   {
-    "name": "Пометить заметки как непрочитанные",
+    "name": "Mark Notes As Unread",
     "internalName": "bMarkNotesUnread",
-    "description": "Добавляет ПКМ для пометки заметки как непрочитанной.",
-    "category": "Меню"
+    "description": "Adds right click to mark a note as unread.",
+    "category": "Menus"
   },
   {
-    "name": "Пользовательские иконки всплывающих сообщений",
+    "name": "Custom Popup Icons",
     "internalName": "bCustomPopupIcons",
-    "description": "Добавляет настраиваемые иконки во всплывающие сообщения.",
-    "category": "Меню",
+    "description": "Adds configurable icons to popup messages.",
+    "category": "Menus",
     "subsettings": [
       {
         "type": "input",
-        "name": "Увеличение радиации",
+        "name": "Radiation Increase",
         "internalName": "sRadiationIncrease",
         "internalCategory": "UI Message Icons"
       },
       {
         "type": "input",
-        "name": "Снижение радиации",
+        "name": "Radiation Decrease",
         "internalName": "sRadiationDecrease",
         "internalCategory": "UI Message Icons"
       },
       {
         "type": "input",
-        "name": "Лучевая болезнь",
+        "name": "Radiation Sick",
         "internalName": "sRadiationSick",
         "internalCategory": "UI Message Icons"
       },
       {
         "type": "input",
-        "name": "Нет лучевой болезни",
+        "name": "Radiation Not Sick",
         "internalName": "sRadiationNotSick",
         "internalCategory": "UI Message Icons"
       },
       {
         "type": "input",
-        "name": "Рост обезвоживания",
+        "name": "Dehydration Increase",
         "internalName": "sDehydrationIncrease",
         "internalCategory": "UI Message Icons"
       },
       {
         "type": "input",
-        "name": "Снижение обезвоживания",
+        "name": "Dehydration Decrease",
         "internalName": "sDehydrationDecrease",
         "internalCategory": "UI Message Icons"
       },
       {
         "type": "input",
-        "name": "Обезвоживание",
+        "name": "Dehydration Sick",
         "internalName": "sDehydrationSick",
         "internalCategory": "UI Message Icons"
       },
       {
         "type": "input",
-        "name": "Нет обезвоживания",
+        "name": "Dehydration Not Sick",
         "internalName": "sDehydrationNotSick",
         "internalCategory": "UI Message Icons"
       },
       {
         "type": "input",
-        "name": "Рост голода",
+        "name": "Hunger Increase",
         "internalName": "sHungerIncrease",
         "internalCategory": "UI Message Icons"
       },
       {
         "type": "input",
-        "name": "Снижение голода",
+        "name": "Hunger Decrease",
         "internalName": "sHungerDecrease",
         "internalCategory": "UI Message Icons"
       },
       {
         "type": "input",
-        "name": "Голод",
+        "name": "Hunger Sick",
         "internalName": "sHungerSick",
         "internalCategory": "UI Message Icons"
       },
       {
         "type": "input",
-        "name": "Нет голода",
+        "name": "Hunger Not Sick",
         "internalName": "sHungerNotSick",
         "internalCategory": "UI Message Icons"
       },
       {
         "type": "input",
-        "name": "Рост депривации сна",
+        "name": "Sleep Deprivation Increase",
         "internalName": "sSleepDeprivationIncrease",
         "internalCategory": "UI Message Icons"
       },
       {
         "type": "input",
-        "name": "Снижение депривации сна",
+        "name": "Sleep Deprivation Decrease",
         "internalName": "sSleepDeprivationDecrease",
         "internalCategory": "UI Message Icons"
       },
       {
         "type": "input",
-        "name": "Депривация сна",
+        "name": "Sleep Deprivation Sick",
         "internalName": "sSleepDeprivationSick",
         "internalCategory": "UI Message Icons"
       },
       {
         "type": "input",
-        "name": "Нет депривации сна",
+        "name": "Sleep Deprivation Not Sick",
         "internalName": "sSleepDeprivationNotSick",
         "internalCategory": "UI Message Icons"
       },
       {
         "type": "input",
-        "name": "Зависимость от химии",
+        "name": "Chems Addicted",
         "internalName": "sChemsAddicted",
         "internalCategory": "UI Message Icons"
       }
     ]
   },
   {
-    "name": "Отключить звук расчленения при входе в ячейки",
+    "name": "Prevent Gib Sound When Entering Cells",
     "internalName": "bNoGibSoundWhenEnteringCells",
-    "description": "Предотвращать звуки взрыва частей тела при входе в ячейки.",
-    "category": "Исправления"
+    "description": "Prevent body part explosion sounds when entering cells.",
+    "category": "Fixes"
   },
   {
-    "name": "Локальная карта: отдельная иконка двери наружу",
+    "name": "Local Map Separate Interior/Exterior Door Icon",
     "internalName": "bInteriorExteriorMapDoorIcon",
-    "description": "Использовать отдельную иконку для дверей на локальной карте, ведущих наружу.",
-    "category": "Меню"
+    "description": "Use a separate icon for local map doors which lead to an exterior.",
+    "category": "Menus"
   },
   {
-    "name": "Иконки в меню испытаний",
+    "name": "Challenge Menu Icons",
     "internalName": "bChallengeMenuIcons",
-    "description": "Использовать иконки испытаний в меню испытаний Пип-Боя (требуется мод, добавляющий иконки к формам Challenge).",
-    "category": "Меню"
+    "description": "Use challenge icons in the Пип-Бой challenges menu (requires a mod that adds icons to the Challenge forms).",
+    "category": "Menus"
   },
   {
-    "name": "Пауза голозаписей",
+    "name": "Pause Holotapes",
     "internalName": "bPauseHolotapes",
-    "description": "Клик по текущей голозаписи ставит паузу, двойной клик по паузе сбрасывает воспроизведение.",
-    "category": "Меню",
+    "description": "Make clicking on the current holotape pause it, double tapping pause resets the holotape.",
+    "category": "Menus",
     "subsettings": [
       {
-        "name": "Пауза в меню диалога",
+        "name": "Pause In Dialog Menu",
         "internalName": "bPauseInDialogMenu",
         "internalCategory": "Pause Holotapes",
-        "description": "Ставить на паузу при открытом меню диалога."
+        "description": "Pause holotapes while the Dialog menu is open."
       }
     ]
   },
   {
-    "name": "Улучшенная погода",
+    "name": "Improved Weather",
     "internalName": "bImprovedWeather",
-    "description": "Предотвращать смену погоды при быстром перемещении на короткие расстояния.",
-    "category": "Разное",
+    "description": "Prevent weather changes when fast traveling short distances.",
+    "category": "Misc",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Порог расстояния смены погоды при быстром перемещении",
+        "name": "Fast Travel Weather Change Distance Threshold",
         "internalName": "fFastTravelWeatherChangeDistanceThreshold",
         "internalCategory": "Improved Weather",
-        "description": "Минимальная дистанция быстрого перемещения для смены погоды.",
+        "description": "Minimum fast travel distance for a weather change.",
         "minValue": 0,
         "maxValue": 100000
       }
     ]
   },
   {
-    "name": "Компас показывает название локации",
+    "name": "Compass Shows Location Name",
     "internalName": "bHUDMarkerNameIndicator",
-    "description": "Показывать имя ближайшей локации, на которую вы смотрите.",
+    "description": "Show the name of the nearest location marker you're looking towards.",
     "category": "HUD",
     "subsettings": [
       {
-        "name": "Скрывать названия неоткрытых",
+        "name": "Hide Undiscovered Names",
         "internalName": "bHideUndiscoveredNames",
         "internalCategory": "HUD Marker Name",
-        "description": "Скрывать ли названия неоткрытых локаций."
+        "description": "Whether names of undiscovered locations should be hidden."
       },
       {
-        "name": "Показывать дистанцию",
+        "name": "Show Distance",
         "internalName": "iShowDistance",
         "internalCategory": "HUD Marker Name",
-        "description": "Показывать дистанцию до маркера.",
+        "description": "Show the distance to the marker.",
         "options": [
           {
             "name": "Off",
@@ -7607,430 +7607,430 @@
       },
       {
         "type": "slider",
-        "name": "Макс. угол",
+        "name": "Max Angle",
         "internalName": "fMaxAngle",
         "internalCategory": "HUD Marker Name",
-        "description": "Максимальный угол показа названия локации.",
+        "description": "Maximum Angle to show the location name.",
         "minValue": 0,
         "maxValue": 20
       },
       {
         "type": "slider",
-        "name": "Смещение угла",
+        "name": "Angle Offset",
         "internalName": "fAngleOffset",
         "internalCategory": "HUD Marker Name",
-        "description": "Смещение угла (для компенсации смещения иконки локации).",
+        "description": "Offset of angle (to adjust for the location icon being off-centered).",
         "minValue": -20,
         "maxValue": 20
       },
       {
         "type": "slider",
-        "name": "Задержка",
+        "name": "Delay",
         "internalName": "fDelay",
         "internalCategory": "HUD Marker Name",
-        "description": "Задержка (в секундах) перед показом названия локации.",
+        "description": "Delay (in seconds) before the location name is shown.",
         "minValue": 0,
         "maxValue": 4
       },
       {
-        "name": "Показывать маркеры игрока",
+        "name": "Show Player Markers",
         "internalName": "bShowPlayerMarkers",
         "internalCategory": "HUD Marker Name",
-        "description": "Показывать дистанцию до поставленного игроком маркера."
+        "description": "Show distance to the player placed marker."
       },
       {
         "type": "input",
-        "name": "Название маркера игрока",
+        "name": "Show Player Markers",
         "internalName": "sPlayerMarkerName",
         "internalCategory": "HUD Marker Name",
-        "description": "Название при просмотре маркера, поставленного игроком."
+        "description": "Name when viewing player placed marker."
       }
     ]
   },
   {
-    "name": "Масштабировать размер куч пепла",
+    "name": "Scale Ashpile Size",
     "internalName": "bScaleAshpileSize",
-    "description": "Масштабировать размер куч пепла в зависимости от размера актера - некоторые существа (например, платяные мушки) имеют большие границы, что влияет на размер кучи пепла.",
-    "category": "Разное",
+    "description": "Scale the size of ashpiles depending on actor size - note some creatures such as Bloatflies have large bounds which affects their ashpile size.",
+    "category": "Misc",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Мин. масштаб",
+        "name": "Min Scale",
         "internalName": "fMinScale",
         "internalCategory": "Ashpile Scale",
-        "description": "Минимальный масштаб, применяемый к кучам пепла.",
+        "description": "Minimum scale applied to ashpiles.",
         "minValue": 0,
         "maxValue": 2
       },
       {
         "type": "slider",
-        "name": "Макс. масштаб",
+        "name": "Max Scale",
         "internalName": "fMaxScale",
         "internalCategory": "Ashpile Scale",
-        "description": "Максимальный масштаб, применяемый к кучам пепла.",
+        "description": "Maximum scale applied to ashpiles.",
         "minValue": 0,
         "maxValue": 5
       }
     ]
   },
   {
-    "name": "Разрешить выбирать целью снаряды в VATS",
+    "name": "Target Projectiles in VATS",
     "internalName": "bTargetProjectilesInVATS",
-    "description": "Разрешить прицеливание в снаряды в VATS. Процент шанса попадания не учитывает видимость снаряда, только дистанцию и навык игрока.",
-    "category": "Игровой процесс",
+    "description": "Allow targeting projectiles in VATS. The percentage hit chance doesn't take the visibility of the projectile into account, only the distance + player skill.",
+    "category": "Gameplay",
     "subsettings": [
       {
-        "name": "Разрешить прицеливание в мины",
+        "name": "Allow targeting mines",
         "internalName": "bMines",
         "internalCategory": "VATS Target Projectiles"
       }
     ]
   },
   {
-    "name": "Быстрая загрузка из главного/пауза-меню",
+    "name": "Quickload from Main/Start Menu",
     "internalName": "bStartMenuQuickLoad",
-    "description": "Добавляет поддержку клавиши быстрой загрузки в главном и меню паузы.",
-    "category": "Меню"
+    "description": "Add support for the QuickLoad key in the Main/Pause menus.",
+    "category": "Menus"
   },
   {
-    "name": "Показывать цели задания при смене ячейки",
+    "name": "Show Quest Objectives On Cell Change",
     "internalName": "bShowQuestObjectivesOnCellChange",
-    "description": "Показывать цели задания при смене ячейки.",
+    "description": "Show quest objectives when changing cells.",
     "category": "HUD",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Мин. интервал",
+        "name": "Min Interval",
         "internalName": "fMinInterval",
         "internalCategory": "Quest Reminders On Cell Change",
-        "description": "Не показывать цели повторно в течение этого времени (в секундах).",
+        "description": "Prevent showing objectives again within this time (in seconds).",
         "minValue": 0,
         "maxValue": 600
       }
     ]
   },
   {
-    "name": "Мины при контакте",
+    "name": "Contact Mines",
     "internalName": "bContactMines",
-    "description": "Мгновенно подрывать мины при наступании на них.",
-    "category": "Игровой процесс",
+    "description": "Instantly detonate mines when they are stood on.",
+    "category": "Gameplay",
     "subsettings": [
       {
-        "name": "Влиять на игрока",
+        "name": "Affect Player",
         "internalName": "bPlayer",
         "internalCategory": "Contact Mines"
       },
       {
-        "name": "Влиять на NPC",
+        "name": "Affect NPC",
         "internalName": "bNPCs",
         "internalCategory": "Contact Mines"
       }
     ]
   },
   {
-    "name": "Осечки при стрельбе из автоматического оружия",
+    "name": "Allow Jams While Firing Automatic Weapons",
     "internalName": "bAutoWeaponJamWhileFiring",
-    "description": "Разрешить проигрывание анимации осечки во время стрельбы из автоматического оружия. В ванили осечка возможна только на первом выстреле. Для шанса осечки во время стрельбы нужно править gamesettings fWeaponConditionJam1/fWeaponConditionJam2...",
-    "category": "Игровой процесс"
+    "description": "Allow firing anim jams to play while firing an automatic weapon. In vanilla only the first shot can jam. Note that you need to edit the fWeaponConditionJam1/fWeaponConditionJam2... gamesettings to add a chance for any jams while firing.",
+    "category": "Gameplay"
   },
   {
-    "name": "Выход из экранов загрузки по клику",
+    "name": "Click To Exit Load Screens",
     "internalName": "bClickToExitLoadScreens",
-    "description": "Требовать клик для выхода из экранов загрузки.",
-    "category": "Разное",
+    "description": "Require clicking to exit load screens.",
+    "category": "Misc",
     "subsettings": [
       {
-        "name": "Скрывать колесо загрузки по завершении",
+        "name": "Hide Loading Wheel When Finished",
         "internalName": "bHideWheel",
         "internalCategory": "Click To Load",
-        "description": "Скрывать индикатор загрузки после завершения загрузки."
+        "description": "Hide the loading wheel when loading is finished."
       },
       {
-        "name": "Только загрузка сохранения",
+        "name": "Load Game Only",
         "internalName": "bLoadGameOnly",
         "internalCategory": "Click To Load",
-        "description": "Не требовать клика для экранов быстрой перемещ./переходов наружу."
+        "description": "Don't require clicking through fast travel/exterior load screens."
       }
     ]
   },
   {
-    "name": "Скрывать курсор в меню сообщений",
+    "name": "Hide Cursor In Message Menu",
     "internalName": "bHideCursorInMessageMenu",
-    "description": "Скрывать курсор во всплывающих окнах сообщений.",
-    "category": "Меню"
+    "description": "Hide the cursor in the message popup windows.",
+    "category": "Menus"
   },
   {
-    "name": "Кинематографическая камера убийств на основе шанса",
+    "name": "Chance Based Killcams",
     "internalName": "bChanceBasedKillcams",
-    "description": "Давать шанс проигрывания кинематографического/игрового киллкама при убийстве последнего в группе врагов.",
-    "category": "Разное",
+    "description": "Give a chance the cinematic/player view killcam will play when killing the last of a combat group.",
+    "category": "Misc",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Шанс",
+        "name": "Chance",
         "internalName": "fChance",
         "internalCategory": "Killcam",
-        "description": "Процент шанса проигрывания киллкама при убийстве последнего в группе.",
+        "description": "Percentage chance the cinematic/player view killcam will play when killing the last of a combat group.",
         "minValue": 0,
         "maxValue": 100
       }
     ]
   },
   {
-    "name": "Сохранять текст обновления заданий видимым в меню",
+    "name": "Keep Quest Update Text Visible In Menus",
     "internalName": "bQuestTextVisibleInMenus",
-    "description": "Оставлять текст о задании/локации видимым в меню Пип-Боя и взлома, а также при сидении.",
-    "category": "Меню"
+    "description": "Keep the quest/location added text visible in the Пип-Бой and Hacking menus, and while sitting down.",
+    "category": "Menus"
   },
   {
-    "name": "Пропуск подтверждения при загрузке сохранения",
+    "name": "Skip Load Save Confirmation Prompt",
     "internalName": "bSkipLoadSaveConfirmationPrompt",
-    "description": "Пропускать окно подтверждения при загрузке сохранения.",
-    "category": "Меню",
+    "description": "Skip the confirmation prompt when loading a save.",
+    "category": "Menus",
     "subsettings": [
       {
-        "name": "Только в главном меню",
+        "name": "Main Menu Only",
         "internalName": "bMainMenuOnly",
         "internalCategory": "Skip Load Confirmation",
-        "description": "Пропускать подтверждение только в главном меню."
+        "description": "Only skip the confirmation at the main menu."
       }
     ]
   },
   {
-    "name": "Цветовая метка состояния оружия",
+    "name": "Color Weapon Condition Label",
     "internalName": "bColorWeaponCndLabel",
-    "description": "Позволяет раскрашивать метку низкого состояния оружия.",
+    "description": "Allow coloring the weapon low condition label.",
     "category": "HUD",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Порог мигания",
+        "name": "Blink Threshold",
         "internalName": "fFlashThreshold",
         "internalCategory": "Weapon Condition Label",
-        "description": "Процент прочности, при котором метка мигает.",
+        "description": "Threshold health percent for label to blink.",
         "minValue": 0,
         "maxValue": 100
       },
       {
         "type": "slider",
-        "name": "Порог цвета",
+        "name": "Color Threshold",
         "internalName": "fColorThreshold",
         "internalCategory": "Weapon Condition Label",
-        "description": "Процент прочности, при котором метка становится красной.",
+        "description": "Threshold health percent for label to turn red.",
         "minValue": 0,
         "maxValue": 100
       }
     ]
   },
   {
-    "name": "Метка состояния брони",
+    "name": "Armor Condition Label",
     "internalName": "bArmorConditionLabel",
-    "description": "Добавляет метку состояния брони на HUD.",
+    "description": "Add an armor condition label to the HUD.",
     "category": "HUD",
     "subsettings": [
       {
         "type": "input",
-        "name": "Метка брони",
+        "name": "Armor Label",
         "internalName": "sArmorLabel",
         "internalCategory": "HUD Armor Condition",
-        "description": "Метка рядом с индикатором брони."
+        "description": "Label shown beside the armor meter."
       },
       {
         "type": "input",
-        "name": "Метка оружия",
+        "name": "Weapon Label",
         "internalName": "sWeaponLabel",
         "internalCategory": "HUD Armor Condition",
-        "description": "Замена метки рядом с индикатором оружия (пусто — стандартная строка)."
+        "description": "Replacement label beside the weapon meter (leave blank to use vanilla string)."
       },
       {
         "type": "slider",
-        "name": "Порог мигания",
+        "name": "Blink Threshold",
         "internalName": "fFlashThreshold",
         "internalCategory": "HUD Armor Condition",
-        "description": "Процент прочности, при котором метка мигает.",
+        "description": "Threshold health percent for label to blink.",
         "minValue": 0,
         "maxValue": 100
       },
       {
         "type": "slider",
-        "name": "Порог цвета",
+        "name": "Color Threshold",
         "internalName": "fColorThreshold",
         "internalCategory": "HUD Armor Condition",
-        "description": "Процент прочности, при котором метка становится красной.",
+        "description": "Threshold health percent for label to turn red.",
         "minValue": 0,
         "maxValue": 100
       },
       {
         "type": "slider",
-        "name": "Порог видимости",
+        "name": "Visibility Threshold",
         "internalName": "fVisibilityThreshold",
         "internalCategory": "HUD Armor Condition",
-        "description": "Процент прочности для показа метки (0 — отключить).",
+        "description": "Threshold health percent for label to turn visible (set to 0 to disable).",
         "minValue": 0,
         "maxValue": 100
       },
       {
         "type": "slider",
-        "name": "Смещение метки по X",
+        "name": "Label X Offset",
         "internalName": "iLabelOffsetX",
         "internalCategory": "HUD Armor Condition",
-        "description": "Смещение позиции метки состояния брони по оси X.",
+        "description": "Offset applied to the X position of the armor condition label.",
         "minValue": -1000,
         "maxValue": 1000
       },
       {
         "type": "slider",
-        "name": "Смещение метки по Y",
+        "name": "Label Y Offset",
         "internalName": "iLabelOffsetY",
         "internalCategory": "HUD Armor Condition",
-        "description": "Смещение позиции метки состояния брони по оси Y.",
+        "description": "Offset applied to the Y position of the armor condition label.",
         "minValue": -1000,
         "maxValue": 1000
       },
       {
         "type": "slider",
-        "name": "Смещение метки по Y",
+        "name": "Label Y Offset",
         "internalName": "iLabelOffsetY",
         "internalCategory": "HUD Armor Condition",
-        "description": "Смещение позиции метки состояния брони по оси Y.",
+        "description": "Offset applied to the Y position of the armor condition label.",
         "minValue": -1000,
         "maxValue": 1000
       },
       {
-        "name": "Использовать позицию оружия",
+        "name": "Use Weapon Pos",
         "internalName": "bUseWeaponPos",
         "internalCategory": "HUD Armor Condition",
-        "description": "Использовать позицию метки оружия, если оружие не экипировано."
+        "description": "Use weapon label position if no weapon is equipped."
       },
       {
-        "name": "Выровнять по состоянию оружия",
+        "name": "Align With Weapon Condition",
         "internalName": "bAlignWithWeaponX",
         "internalCategory": "HUD Armor Condition",
-        "description": "Использовать позицию по X метки оружия, если выбран альтернативный тип боеприпасов."
+        "description": "Use weapon label x position if an alternate ammo type is equipped."
       }
     ]
   },
   {
-    "name": "Переместить метку типа боеприпасов",
+    "name": "Move Ammo Type Label",
     "internalName": "bMoveAmmoTypeLabel",
-    "description": "Перемещает метку типа боеприпасов под счетчик боеприпасов.",
+    "description": "Moves the ammo type label to under the ammo count.",
     "category": "HUD"
   },
   {
-    "name": "Порог брони предотвращает кровавые следы",
+    "name": "Armor DT Prevents Blood Decals",
     "internalName": "bArmorPreventsBloodDecals",
-    "description": "Предотвращать кровавые следы для атак, не пробивающих DT цели.",
-    "category": "Разное"
+    "description": "Prevent blood decals for attacks that don't penetrate target DT.",
+    "category": "Misc"
   },
   {
-    "name": "Полоса здоровья врага показывает усиленное ХП",
+    "name": "Enemy Healthbar Shows Buffed HP",
     "internalName": "bEnemyHealthbarShowBuffedHP",
-    "description": "Учитывать модификаторы здоровья на полосе врага (напр., баффаут).",
+    "description": "Include health modifiers in enemy healthbars (e.g. buffout).",
     "category": "HUD"
   },
   {
-    "name": "Горячая клавиша: маркер в текущей позиции",
+    "name": "Place Marker At Current Position Hotkey",
     "internalName": "iPlaceMapMarkerAtPlayerPosKey",
     "internalCategory": "Hotkeys",
-    "category": "Горячие клавиши",
-    "description": "Ставит маркер карты в вашей текущей позиции.",
+    "category": "Hotkeys",
+    "description": "Places the map marker at your current position.",
     "subsettings": [
       {
         "type": "hotkey",
-        "name": "Клавиша",
+        "name": "Key",
         "internalName": "iPlaceMapMarkerAtPlayerPosKey",
         "internalCategory": "Hotkeys"
       },
       {
         "type": "input",
-        "name": "Сообщение",
+        "name": "Message",
         "internalName": "sMessage",
         "internalCategory": "Place Marker Hotkey",
-        "description": "Сообщение при установке маркера (пусто — без сообщения)."
+        "description": "Message to show when placing a marker, leave blank for none."
       },
       {
         "type": "input",
-        "name": "Звук",
+        "name": "Sound",
         "internalName": "sSound",
         "internalCategory": "Place Marker Hotkey",
-        "description": "EditorID звука при установке маркера (пусто — без звука)."
+        "description": "EditorID of sound to play when placing a marker, leave blank for none."
       }
     ]
   },
   {
-    "name": "Спать на стульях",
+    "name": "Sleep On Chairs",
     "internalName": "bSleepOnChairs",
-    "description": "Спать при ожидании на стульях.",
-    "category": "Игровой процесс"
+    "description": "Sleep when waiting on chairs.",
+    "category": "Gameplay"
   },
   {
-    "name": "Слайдер сна/ожидания показывает время пробуждения",
+    "name": "Sleep Wait Slider Show Wake Time",
     "internalName": "bSleepWaitSliderShowsWakeTime",
-    "description": "Показывать время пробуждения на слайдере сна/ожидания вместо часов.",
-    "category": "Меню"
+    "description": "Show the wake time on the sleep/wait slider instead of hours.",
+    "category": "Menus"
   },
   {
-    "name": "Калечение не разоружает NPC",
+    "name": "Crippling Doesn't Disarm NPC",
     "internalName": "bCripplingDoesntDisarm",
-    "description": "Предотвращать выпадение оружия у NPC при калечении рук.",
-    "category": "Игровой процесс"
+    "description": "Prevent NPC dropping their weapons when arms are crippled.",
+    "category": "Gameplay"
   },
   {
-    "name": "Сохранять высоту падения при загрузке",
+    "name": "Keep Fall Height When Loading Saves",
     "internalName": "bKeepFallHeightOnLoad",
-    "description": "Предотвращать сброс высоты падения при загрузке сохранения.",
-    "category": "Игровой процесс"
+    "description": "Prevent fall height being reset when loading a save.",
+    "category": "Gameplay"
   },
   {
-    "name": "Оживлять потерявших сознание напарников",
+    "name": "Revive Unconscious Companions",
     "internalName": "bReviveUnconsciousCompanions",
-    "description": "Использовать стимпаки для оживления потерявших сознание напарников.",
-    "category": "Игровой процесс",
+    "description": "Use stimpaks to revive unconscious companions.",
+    "category": "Gameplay",
     "subsettings": [
       {
         "type": "input",
-        "name": "Подсказка",
+        "name": "Prompt",
         "internalName": "sPrompt",
         "internalCategory": "Revive Unconscious Companions",
-        "description": "Подсказка при наведении на потерявшего сознание напарника."
+        "description": "Prompt shown when mousing over an unconscious companion."
       },
       {
         "type": "slider",
-        "name": "Время без сознания",
+        "name": "Unconscious Time",
         "internalName": "fUnconsciousTime",
         "internalCategory": "Revive Unconscious Companions",
-        "description": "Длительность нокаута напарников. 0 — использовать стандартное значение fEssentialDeathTime.",
+        "description": "Duration companions stay knocked out. Set to 0 to use the vanilla fEssentialDeathTime gamesetting.",
         "minValue": 0,
         "maxValue": 300
       },
       {
-        "name": "Оживлять при смене ячейки",
+        "name": "Revive When Changing Cells",
         "internalName": "bReviveWhenChangingCells",
         "internalCategory": "Revive Unconscious Companions",
-        "description": "Автоматически оживлять напарников при смене ячейки."
+        "description": "Automatically revive companions when changing cells."
       }
     ]
   },
   {
-    "name": "Затухание звуков сердцебиения",
+    "name": "Heartbeat Sounds Fade",
     "internalName": "bHeatbeatSoundsFade",
-    "description": "Постепенно снижать громкость звуков сердцебиения, сбрасывать громкость при получении урона.",
-    "category": "Разное",
+    "description": "Fade the volume of heartbeat sounds, reset the volume when taking damage.",
+    "category": "Misc",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Длительность",
+        "name": "Duration",
         "internalName": "fDuration",
         "internalCategory": "Heartbeat Sounds Fade",
-        "description": "Длительность затухания звука в секундах.",
+        "description": "Duration for the sound fading in seconds.",
         "minValue": 0,
         "maxValue": 60
       },
       {
-        "name": "Функция сглаживания",
+        "name": "Easing function",
         "internalName": "iEasingFunction",
         "internalCategory": "Heartbeat Sounds Fade",
-        "description": "Какая функция сглаживания будет применена к громкости (см. easings.net).",
+        "description": "Which easing function will be applied to the volume (see easings.net).",
         "options": [
           {
             "name": "None",
@@ -8069,144 +8069,144 @@
     ]
   },
   {
-    "name": "Проигрывать звуки брони в 3D",
+    "name": "Play Armor Sounds In 3D",
     "internalName": "bArmorSoundsPlayIn3D",
-    "description": "Проигрывать шумы брони в 3D в режиме от третьего лица.",
-    "category": "Разное"
+    "description": "Play armor foley sounds in 3D when in 3rd person.",
+    "category": "Misc"
   },
   {
-    "name": "Сортировать меню ремонта Пип-Боя",
+    "name": "Sort Пип-Бой Repair Menu",
     "internalName": "bSortPipboyRepairMenu",
-    "description": "Сортировать меню ремонта Пип-Боя по алфавиту, сначала показывая предметы, совпадающие с ремонтируемым.",
-    "category": "Меню",
+    "description": "Sort the Пип-Бой repair menu alphabetically, placing items equal to the repair item first.",
+    "category": "Menus",
     "subsettings": [
       {
-        "name": "Режим сортировки",
+        "name": "Sort Mode",
         "internalName": "iSortMode",
         "internalCategory": "Pipboy Repair Menu Sorting",
         "options": [
           {
-            "name": "Алфавит",
+            "name": "Alphabetical",
             "value": 0
           },
           {
-            "name": "Цена/Вес",
+            "name": "Value/Weight",
             "value": 1
           }
         ]
       },
       {
-        "name": "Сначала совпадающие с целью ремонта",
+        "name": "Equal To Repair Target First",
         "internalName": "bMatchedItemFirst",
         "internalCategory": "Pipboy Repair Menu Sorting",
-        "description": "Показывать ли в первую очередь предметы, совпадающие с целью ремонта."
+        "description": "Whether items matching the repair target should be shown first."
       }
     ]
   },
   {
-    "name": "Отключить невидимость в Пип-Бое",
+    "name": "Disable Invisibility In Пип-Бой",
     "internalName": "bDisableStealthEffectInPipboy",
-    "description": "Отключать эффект невидимости от стелс-боя и т.п., когда открыт Пип-Бой.",
-    "category": "Разное"
+    "description": "Disable the invisibility effect from stealth boys etc. while the Пип-Бой is open.",
+    "category": "Misc"
   },
   {
-    "name": "Торговля: показывать изменение крышек",
+    "name": "Barter Show Caps Change",
     "internalName": "bBarterShowCapsChange",
-    "description": "Показывать итоговые крышки после сделки рядом с крышками игрока/торговца.",
-    "category": "Меню",
+    "description": "Show the final caps after a transaction beside player/merchant caps.",
+    "category": "Menus",
     "subsettings": [
       {
-        "name": "Режим",
+        "name": "Mode",
         "internalName": "iMode",
         "internalCategory": "Barter Show Transaction Caps",
         "options": [
           {
-            "name": "Текст",
+            "name": "Text",
             "value": 0,
-            "description": "Показывать { текущие -> итоговые } для отображения крышек."
+            "description": "Show { current -> final } for the caps display."
           },
           {
-            "name": "Яркость",
+            "name": "Brightness",
             "value": 1,
-            "description": "Показывать только итоговые крышки и регулировать яркость текста."
+            "description": "Show the final caps display and adjust the text brightness."
           }
         ]
       }
     ]
   },
   {
-    "name": "Напарники не расходуют боеприпасы",
+    "name": "Companions Don't Consume Ammo",
     "internalName": "bCompanionsDontUseAmmo",
-    "description": "Не расходовать боеприпасы у напарников при стрельбе.",
-    "category": "Игровой процесс"
+    "description": "Don't remove ammo from companions when they fire weapons.",
+    "category": "Gameplay"
   },
   {
-    "name": "Исправление числа гильз при очереди",
+    "name": "Ammo Burst Case Count Fix",
     "internalName": "bAmmoBurstCaseCountFix",
-    "description": "Давать шанс получить несколько гильз для оружия, расходующего >1 патрон за выстрел (напр., трехлучевая лазерная винтовка).",
-    "category": "Исправления"
+    "description": "Give a chance to earn multiple ammo casings from weapons that use more than 1 ammo per shot (e.g. the Tri-Beam laser rifle).",
+    "category": "Fixes"
   },
   {
-    "name": "Перераспределять очки навыков при повышении уровня",
+    "name": "Reallocate Skill Points On LevelUp",
     "internalName": "bReallocateSkillPointsOnLevelup",
-    "description": "Позволяет переназначать все очки навыков при повышении уровня.",
-    "category": "Чит"
+    "description": "Allow reassigning all skill points when leveling up.",
+    "category": "Cheat"
   },
   {
-    "name": "Наборы ремонта оружия в меню ремонта",
+    "name": "Use Weapon Repair Kits In Repair Menu",
     "internalName": "bUseWeaponRepairKitsInRepairMenu",
-    "description": "Показывать наборы ремонта в меню ремонта оружия.",
-    "category": "Игровой процесс",
+    "description": "Show repair kits in the weapon repair menu.",
+    "category": "Gameplay",
     "subsettings": [
       {
         "type": "input",
-        "name": "Текст кнопки 'Ремонт'",
+        "name": "Repair Text",
         "internalName": "sRepairText",
         "internalCategory": "Use Repair Kits In Repair Menu",
-        "description": "Текст, отображаемый вместо 'Ремонт', если у вас только наборы ремонта."
+        "description": "Text to display instead of 'Repair' if you only have repair kits."
       }
     ]
   },
   {
-    "name": "Сила влияет на дальность броска всего метательного оружия",
+    "name": "Strength Affects All Throwable Distances",
     "internalName": "bStrengthAffectsAllThrowables",
-    "description": "Gamesetting fThrowingStrengthPenalty так же влияет на гранаты и мины.",
-    "category": "Игровой процесс"
+    "description": "Make the fThrowingStrengthPenalty gamesetting also affect grenades and mines.",
+    "category": "Gameplay"
   },
   {
-    "name": "Карта запоминает позицию",
+    "name": "Map Remembers Position",
     "internalName": "bMapRemembersPosition",
-    "description": "Запоминать последнюю просмотренную позицию в меню карты.",
-    "category": "Меню",
+    "description": "Remember the last viewed position in the Map Menu.",
+    "category": "Menus",
     "subsettings": [
       {
-        "name": "Сохранять для каждого сохранения",
+        "name": "Save Persistent",
         "internalName": "bSavePersistent",
         "internalCategory": "Remember Map Position",
-        "description": "Запоминать позицию карты для каждого сохранения."
+        "description": "Remember the map position for each save."
       }
     ]
   },
   {
-    "name": "Горячая клавиша центрирования карты",
+    "name": "Map Recenter Hotkey",
     "internalName": "bMapRecenterHotkey",
-    "description": "Добавляет горячую клавишу для центрирования меню карты.",
-    "category": "Меню",
+    "description": "Add a hotkey to recenter the map menu.",
+    "category": "Menus",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Время сглаживания",
+        "name": "Easing Time",
         "internalName": "iEasingTimeMS",
         "internalCategory": "Map Recenter Hotkey",
-        "description": "Длительность движения при центрировании (в миллисекундах).",
+        "description": "Duration of the recenter movement (in milliseconds).",
         "minValue": 0,
         "maxValue": 5000
       },
       {
-        "name": "Функция сглаживания",
+        "name": "Easing function",
         "internalName": "iEasingFunction",
         "internalCategory": "Map Recenter Hotkey",
-        "description": "Какая функция сглаживания будет применена к движению (см. easings.net).",
+        "description": "Which easing function will be applied to the movement (see easings.net).",
         "options": [
           {
             "name": "None",
@@ -8245,16 +8245,16 @@
     ]
   },
   {
-    "name": "Карта: показывать дистанцию до локаций",
+    "name": "Map Locations Show Distance",
     "internalName": "bMapLocationDisplayDistance",
-    "description": "Показывать дистанцию до наведенного маркера локации в меню карты.",
-    "category": "Меню",
+    "description": "Show the distance to the hovered location marker in the Map Menu.",
+    "category": "Menus",
     "subsettings": [
       {
-        "name": "Режим отображения",
+        "name": "Display Mode",
         "internalName": "iDisplayMode",
         "internalCategory": "Map Extra Marker Info",
-        "description": "Режим отображения.",
+        "description": "Display mode.",
         "options": [
           {
             "name": "Meters",
@@ -8276,496 +8276,496 @@
       },
       {
         "type": "slider",
-        "name": "Множитель времени",
+        "name": "Time Mult",
         "internalName": "fTimeMult",
         "internalCategory": "Map Extra Marker Info",
-        "description": "Множитель, применяемый к отображаемому времени. Измените, если считаете время неточным (например, с модами на спринт).",
+        "description": "Multiplier applied to the displayed times. You can modify this if you feel the times are inaccurate (e.g. if you use sprint mods and spend most time sprinting)",
         "minValue": 0,
         "maxValue": 10
       },
       {
         "type": "slider",
-        "name": "Множитель дистанции",
+        "name": "Distance Mult",
         "internalName": "fDistMult",
         "internalCategory": "Map Extra Marker Info",
-        "description": "Множитель, применяемый к отображаемым дистанциям. Измените, если расстояния кажутся нереалистичными.",
+        "description": "Multiplier applied to the displayed distances. You can modify this if you feel the distances are unrealistic.",
         "minValue": 0,
         "maxValue": 10
       }
     ]
   },
   {
-    "name": "Торговля влияет на стоимость ремонта",
+    "name": "Barter Affects Repair Costs",
     "internalName": "bBarterAffectsRepairCosts",
-    "description": "Масштабировать цены ремонта у NPC в зависимости от навыка Торговля и модификаторов перков.",
-    "category": "Игровой процесс",
+    "description": "Scale NPC repair prices based on your barter skill and perk modifiers.",
+    "category": "Gameplay",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Базовая стоимость",
+        "name": "Base Cost",
         "internalName": "fCostBase",
         "internalCategory": "Barter Affects Repair Costs",
-        "description": "Базовая стоимость.",
+        "description": "Base cost.",
         "minValue": 0,
         "maxValue": 2
       },
       {
         "type": "slider",
-        "name": "Множитель стоимости",
+        "name": "Cost Multiplier",
         "internalName": "fCostMult",
         "internalCategory": "Barter Affects Repair Costs",
-        "description": "Снижение цены за пункт Торговли.",
+        "description": "Price decrease per barter point.",
         "minValue": 0,
         "maxValue": 0.1
       },
       {
         "type": "slider",
-        "name": "Минимальный множитель стоимости",
+        "name": "Minimum Cost Multiplier",
         "internalName": "fCostMin",
         "internalCategory": "Barter Affects Repair Costs",
-        "description": "Минимальный множитель.",
+        "description": "Minimum multiplier.",
         "minValue": 0,
         "maxValue": 2
       }
     ]
   },
   {
-    "name": "Контейнеры показывают экипированные боеприпасы",
+    "name": "Containers Show Equipped Ammo",
     "internalName": "bContainersShowEquippedAmmo",
-    "description": "Показывать квадратик 'экипировано' рядом с экипированными боеприпасами в контейнерах.",
-    "category": "Меню"
+    "description": "Show the 'equipped' square beside equipped ammos in containers.",
+    "category": "Menus"
   },
   {
-    "name": "Ограничение переносимого учитывается в меню количества",
+    "name": "Quantity Menu Respects Companion Carry Limit",
     "internalName": "bQuantityMenuRespectsCompanionCarryCap",
-    "description": "Ограничивать максимум в меню количества при передаче предметов, перегружающих напарника.",
-    "category": "Меню"
+    "description": "Limit the quantity menu max count when transferring items that would overburden a companion.",
+    "category": "Menus"
   },
   {
-    "name": "Показывать ремарки озвучки в диалогах",
+    "name": "Show Voice Acting Notes in Dialogue",
     "internalName": "bDialogueKeepVoiceActingNotes",
-    "description": "Показывать ремарки озвучки (напр., {afterthought}) в диалогах.",
-    "category": "Меню"
+    "description": "Display the voice acting notes e.g. {afterthought} in dialogue.",
+    "category": "Menus"
   },
   {
-    "name": "Эффекты удара в ближнем бою следуют за целью",
+    "name": "Melee Impact Effects Follow Target",
     "internalName": "bMeleeImpactEffectsFollowTarget",
-    "description": "Заставлять кровавые следы от ближнего боя следовать за целью, а не висеть в воздухе.",
-    "category": "Разное"
+    "description": "Make melee blood decals follow the target instead of floating in midair.",
+    "category": "Misc"
   },
   {
-    "name": "Сообщение об открытии локации в углу",
+    "name": "Location Discovered Corner Message",
     "internalName": "bLocationDiscoveredCornerMessage",
-    "description": "Показывать текст об открытии локации как угловое сообщение, как в Fallout 3.",
+    "description": "Display the location discovered text as a corner message as in Fallout 3.",
     "category": "HUD"
   },
   {
-    "name": "Меню расы: разрешить женскую растительность на лице",
+    "name": "Race Menu Allow Female Facial Hair",
     "internalName": "bRaceMenuAllowFemaleFacialHair",
-    "description": "Разрешить выбор лицевой растительности у женских персонажей в меню расы.",
+    "description": "Allow selecting facial hair on female characters in the Race menu.",
     "category": "HUD"
   },
   {
-    "name": "Консоль: выводить новые моды при загрузке",
+    "name": "Console Print New Mods On Load",
     "internalName": "bPrintNewModsOnLoad",
-    "description": "Выводить, какие моды новые, при загрузке сохранения, созданного без них.",
-    "category": "Разное"
+    "description": "Print which mods are new when loading a save created without them.",
+    "category": "Misc"
   },
   {
-    "name": "Пользовательский звук открытия локации",
+    "name": "Custom Location Discovered Sound",
     "internalName": "bCustomLocationDiscoveredSound",
-    "description": "Настроить звук, проигрываемый при открытии локации.",
-    "category": "Разное",
+    "description": "Customize the sound played when discovering a location.",
+    "category": "Misc",
     "subsettings": [
       {
-        "name": "Editor ID звука",
+        "name": "Sound Editor ID",
         "internalName": "sEditorID",
         "internalCategory": "Location Discovered Sound",
-        "description": "Editor ID звука, проигрываемого при открытии локации.",
+        "description": "Editor ID of the sound to play when discovering a location.",
         "type": "input"
       }
     ]
   },
   {
-    "name": "VATS: разрешить выбирать целью снаряды игрока",
+    "name": "VATS Allow Targeting Player Projectiles",
     "internalName": "bVATSTargetPlayerProjectiles",
-    "description": "Разрешить прицеливание в созданные игроком снаряды в VATS.",
-    "category": "Игровой процесс"
+    "description": "Allow targeting projectiles created by the player in VATS.",
+    "category": "Gameplay"
   },
   {
-    "name": "Блэкджек: отображение суммы",
+    "name": "Blackjack Total Display",
     "internalName": "bBlackJackTotalDisplay",
-    "description": "Показывать значение руки в блэкджеке.",
-    "category": "Меню"
+    "description": "Show a display of your hand values in BlackJack.",
+    "category": "Menus"
   },
   {
-    "name": "Категории рецептов заглавными",
+    "name": "Capitalize Recipe Menu Categories",
     "internalName": "bCapitalizeRecipeCategories",
-    "description": "Показывать категории меню рецептов ПРОПИСНЫМИ.",
-    "category": "Меню"
+    "description": "Show recipe menu categories in full caps.",
+    "category": "Menus"
   },
   {
-    "name": "Перки влияют на скорость кулачного оружия",
+    "name": "Perks Affect Fist Weapon Speed",
     "internalName": "bPerksAffectFistWeaponSpeed",
-    "description": "Разрешить перкам скорости атаки влиять на оружие 'кулаки без оружия'.",
-    "category": "Игровой процесс"
+    "description": "Allow weapon attack speed perks to affect the unarmed fists weapon.",
+    "category": "Gameplay"
   },
   {
-    "name": "Ускорение автоповтора клавиш",
+    "name": "Key Repeat Acceleration",
     "internalName": "bKeyRepeatAcceleration",
-    "description": "Прокручивать быстрее после удержания клавиши некоторое время.",
-    "category": "Меню",
+    "description": "Scroll faster after holding the key for some time.",
+    "category": "Menus",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Задержка",
+        "name": "Delay",
         "internalName": "iDelay",
         "internalCategory": "Key Repeat Acceleration",
-        "description": "Задержка перед применением множителя.",
+        "description": "Delay before multiplier is applied.",
         "minValue": 0,
         "maxValue": 2000
       },
       {
         "type": "slider",
-        "name": "Множитель скорости",
+        "name": "Rate Multiplier",
         "internalName": "fRateMult",
         "internalCategory": "Key Repeat Acceleration",
-        "description": "Множитель, применяемый к скорости прокрутки.",
+        "description": "Multiplier applied to scrolling speed.",
         "minValue": 0,
         "maxValue": 3
       },
       {
         "type": "slider",
-        "name": "Альтернативная задержка",
+        "name": "Alternate Delay",
         "internalName": "iDelayAlt",
         "internalCategory": "Key Repeat Acceleration",
-        "description": "Задержка перед применением второго множителя.",
+        "description": "Delay before the second multiplier is applied.",
         "minValue": 0,
         "maxValue": 5000
       },
       {
         "type": "slider",
-        "name": "Альтернативный множитель скорости",
+        "name": "Alternate Rate Multiplier",
         "internalName": "fRateMultAlt",
         "internalCategory": "Key Repeat Acceleration",
-        "description": "Множитель, применяемый к скорости прокрутки.",
+        "description": "Multiplier applied to scrolling speed.",
         "minValue": 0,
         "maxValue": 10
       }
     ]
   },
   {
-    "name": "VATS: удалять выстрелы из очереди при разоружении",
+    "name": "VATS Dequeue Weapon Shots On Disarm",
     "internalName": "bVATSDequeueWeaponShotsOnDisarm",
-    "description": "Удалять из очереди VATS атаки по оружию NPC, если их разоружили.",
-    "category": "Игровой процесс"
+    "description": "Remove queued VATS attacks on NPC weapons if they get disarmed.",
+    "category": "Gameplay"
   },
   {
-    "name": "Очередь выстрелов для полуавтоматического",
+    "name": "Queue Semi-Automatic Shots",
     "internalName": "bSemiAutoQueue",
-    "description": "Ставит в очередь следующий выстрел для полуавтоматического оружия, если спуск нажат за заданное время до завершения текущего выстрела.",
-    "category": "Игровой процесс",
+    "description": "Queue the next shot for semi-automatic weapons if the trigger is pulled within a specified time frame before the current shot is completed.",
+    "category": "Gameplay",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Период очереди перед концом анимации",
+        "name": "Queue Period Before Anim End",
         "internalName": "fQueuePreAnimEnd",
         "internalCategory": "Firing Queue",
-        "description": "Временное окно (сек) перед концом анимации выстрела, в течение которого можно заранее поставить выстрел в очередь. Ваниль: 0.5 с (нет функции).",
+        "description": "Time window (in seconds) before a weapon's firing animation ends during which the next shot can be pre-queued. Vanilla is 0.5 seconds.",
         "minValue": 0,
         "maxValue": 2
       },
       {
         "type": "slider",
-        "name": "Окно до \"Attack\" в анимации",
+        "name": "Queue Period Before Anim 'Attack' key",
         "internalName": "fQueuePreAttackTextKey",
         "internalCategory": "Firing Queue",
-        "description": "Временное окно (сек) до момента 'a: key' в анимации выстрела, когда можно заранее поставить выстрел в очередь. Ваниль: 0 с (нет функции).",
+        "description": "Time window (in seconds) before the weapon's firing animation 'a: key' where the next shot can be pre-queued. Vanilla is 0 seconds (not a feature).",
         "minValue": 0,
         "maxValue": 2
       }
     ]
   },
   {
-    "name": "Показывать карты Каравана во вкладках Прочее",
+    "name": "Show Caravan Cards In Misc Tabs",
     "internalName": "bShowCaravanCardsInMiscTabs",
-    "description": "Показывать карты Каравана во вкладке Прочее для контейнеров и торговли.",
-    "category": "Меню"
+    "description": "Show caravan cards in the misc tab for containers and barter.",
+    "category": "Menus"
   },
   {
-    "name": "Субтитры показывают имя говорящего",
+    "name": "Subtitles Show Speaker's Name",
     "internalName": "bSubtitlesShowActorNames",
-    "description": "Показывать имя говорящего в субтитрах.",
+    "description": "Show the speaker's name in subtitles.",
     "category": "HUD"
   },
   {
-    "name": "Показывать мод-источник Перка",
+    "name": "Perks Show Source Mod",
     "internalName": "bShowModNameInPerkDescriptions",
-    "description": "Показывает из какого мода выбранный перк.",
-    "category": "Меню",
+    "description": "Show the source mod of perks in the perk menu.",
+    "category": "Menus",
     "subsettings": [
       {
-        "name": "Префикс",
+        "name": "Prefix",
         "internalName": "sPrefix",
         "internalCategory": "Perks Show Source Mod",
         "type": "input",
-        "description": "Префикс, показываемый перед названием мода."
+        "description": "Prefix shown before the mod name."
       }
     ]
   },
   {
-    "name": "Запоминать положение отмычки при взломе",
+    "name": "Lockpick Remembers Bobby Pin Angle",
     "internalName": "bLockpickRememberBobbyPinAngle",
-    "description": "Не сбрасывать положение отмычки, когда она ломается.",
-    "category": "Игровой процесс"
+    "description": "Don't reset the bobby pin angle when it breaks.",
+    "category": "Gameplay"
   },
   {
-    "name": "NPC получают урон от падения по конечностям",
+    "name": "NPC Take Limb Fall Damage",
     "internalName": "bNPCsTakeLimbFallDamage",
-    "description": "Позволяет NPC получать урон от падения по конечностям.",
-    "category": "Игровой процесс"
+    "description": "Make NPC take limb damage when falling.",
+    "category": "Gameplay"
   },
   {
-    "name": "Падение приводит к разрушению конечностей",
+    "name": "Fall Deaths Cause Dismemberment",
     "internalName": "bFallDeathsCauseDismemberment",
-    "description": "Разрушать/взрывать конечности игрока, если он умрет от падения с малой/большой высоты.",
-    "category": "Игровой процесс"
+    "description": "Dismember/explode actor's legs if they die from a short/long fall.",
+    "category": "Gameplay"
   },
   {
-    "name": "Мертвая зона контроллера",
+    "name": "Controller Trigger Deadzone",
     "internalName": "bControllerTriggerDeadzones",
-    "description": "Добавляет настраиваемую мертвую зону для LT/RT, если используется для управления атакой.",
-    "category": "Разное",
+    "description": "Adds a configurable deadzone for LT/RT if used for the attack control.",
+    "category": "Misc",
     "subsettings": [
       {
         "type": "slider",
-        "name": "LT кнопка",
+        "name": "Left Trigger Deadzone",
         "internalName": "iDeadzoneLT",
         "internalCategory": "Controller Trigger Deadzones",
-        "description": "Мертвая зона для LT (0-255)",
+        "description": "Deadzone for the left trigger (0-255)",
         "minValue": 0,
         "maxValue": 255
       },
       {
         "type": "slider",
-        "name": "RT кнопка",
+        "name": "Right Trigger Deadzone",
         "internalName": "iDeadzoneRT",
         "internalCategory": "Controller Trigger Deadzones",
-        "description": "Мертвая зона для RT (0-255)",
+        "description": "Deadzone for the right trigger (0-255)",
         "minValue": 0,
         "maxValue": 255
       }
     ]
   },
   {
-    "name": "Расширить зону sweet spot при взломе",
+    "name": "Extended Lockpick Sweet Spot Range",
     "internalName": "bExtendLockpickSpotRange",
-    "description": "Расширяет зону sweet spot при взломе до краев экрана.",
-    "category": "Игровой процесс"
+    "description": "Expands the lockpick sweetspot range to the edges of the screen.",
+    "category": "Gameplay"
   },
   {
-    "name": "Индикатор перегруза в контейнерах",
+    "name": "Container Encumbrance Indicator",
     "internalName": "bContainerEncumbranceIndicator",
-    "description": "Показывать вес контейнера красным, если взятие предмета перегрузит вас.",
-    "category": "Меню"
+    "description": "Show container weight in red if taking an item will overencumber you.",
+    "category": "Menus"
   },
   {
-    "name": "Отключить звуки шагов напарников",
+    "name": "Prevent Companion Footstep Sounds",
     "internalName": "bPreventTeammateFootstepSounds",
-    "description": "Предотвращать воспроизведение звуков шагов напарников.",
-    "category": "Разное"
+    "description": "Prevent companion footstep sounds playing.",
+    "category": "Misc"
   },
   {
-    "name": "Требование навыка для модификации оружия",
+    "name": "Weapon Modding Skill Requirement",
     "internalName": "bWeaponModdingSkillRequirement",
-    "description": "Запрещать модификацию оружия, если не выполнены требования по навыку.",
-    "category": "Игровой процесс"
+    "description": "Prevent modding weapons if you don't meet the weapon's skill requirements.",
+    "category": "Gameplay"
   },
   {
-    "name": "Силовая броня предотвращает радиацию окружающей среды",
+    "name": "Power Armor Prevents Environment Radiation",
     "internalName": "bNoEnvironmentRadiationInFullPowerArmor",
-    "description": "Предотвращать радиацию окружающей среды при полном комплекте силовой брони.",
-    "category": "Игровой процесс"
+    "description": "Prevent environmental radiation when wearing full power armor.",
+    "category": "Gameplay"
   },
   {
-    "name": "Смена вкладок Пип-Боя вибрирует контроллер",
+    "name": "Changing Пип-Бой Tabs Vibrates Controllers",
     "internalName": "bHapticPipboy",
-    "description": "Вибрировать контроллеры при смене вкладок Пип-Боя.",
-    "category": "Разное"
+    "description": "Vibrate controllers when changing Пип-Бой tabs.",
+    "category": "Misc"
   },
   {
-    "name": "Целиться во взрывчатку в руках",
+    "name": "Target Held Explosives",
     "internalName": "bHiddenFragsFix",
-    "description": "Разрешить подрыв невзаимодействуемых взрывчаток, экипированных NPC (напр., баллоны с газом Призраков).",
-    "category": "Игровой процесс"
+    "description": "Allow fragging unplayable explosives NPC have equipped, e.g. Ghost People's Gas Tanks.",
+    "category": "Gameplay"
   },
   {
-    "name": "Установка активированных гранат требует навыка оружия",
+    "name": "Planting Live Grenades Requires Weapon Skill",
     "internalName": "bPlantingLiveGrenadesRequiresWeaponSkill",
-    "description": "Запрещать подбрасывать взрывчатку, если не выполнены требования по навыку оружия.",
-    "category": "Игровой процесс"
+    "description": "Prevent reverse pickpocketing live grenades if you don't meet the weapon skill requirements.",
+    "category": "Gameplay"
   },
   {
-    "name": "Показывать суммарные эффекты предметов",
+    "name": "Display Item Effect Totals",
     "internalName": "bDisplayItemEffectTotals",
-    "description": "Показывать суммарные эффекты в Пип-Бое, напр.: ОЗ +26(3с) -> ОЗ +78 (26x3с).",
-    "category": "Меню"
+    "description": "Show item effect totals in the Пип-Бой e.g. HP +26(3s) -> HP +78 (26x3s).",
+    "category": "Menus"
   },
   {
-    "name": "Отключить выбрасывание ПКМ в инвентаре",
+    "name": "Disable Inventory Right Click Drop",
     "internalName": "bDisableInventoryRightClickDrop",
-    "description": "Запретить выбрасывать предметы в Пип-Бое правым кликом.",
-    "category": "Меню"
+    "description": "Prevent right clicking dropping items in the Пип-Бой.",
+    "category": "Menus"
   },
   {
-    "name": "Без звуков экипировки при горячих клавишах",
+    "name": "No Hotkey Equip Sounds",
     "internalName": "bNoHotkeyEquipSounds",
-    "description": "Отключить звуки экипировки/снятия при использовании горячих клавиш оружия.",
-    "category": "Разное"
+    "description": "Prevent equip/unequip sounds when using weapon hotkeys.",
+    "category": "Misc"
   },
   {
-    "name": "Предметы напарников не получают урон",
+    "name": "No Companion Item Damage",
     "internalName": "bNoCompanionItemDamage",
-    "description": "Предотвращать получение урона предметами напарников.",
-    "category": "Игровой процесс"
+    "description": "Prevent companion items taking damage.",
+    "category": "Gameplay"
   },
   {
-    "name": "Автоматически взламывать терминалы",
+    "name": "Auto Unlock Terminals",
     "internalName": "bAutoUnlockTerminals",
-    "description": "Автоматически пропускать мини-игру взлома, если ваш навык науки превышает требования терминала.",
-    "category": "Игровой процесс",
+    "description": "Automatically skip the hacking minigame if your science skill is over the terminal's science requirement.",
+    "category": "Gameplay",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Порог",
+        "name": "Delta",
         "internalName": "iThreshold",
         "internalCategory": "Auto Unlock Terminals",
-        "description": "Необходимый запас навыка сверх уровня для авто-взлома.",
+        "description": "Required additional skill above the lock level to automatically unlock it.",
         "minValue": 0,
         "maxValue": 100
       },
       {
         "type": "slider",
-        "name": "Множитель награды",
+        "name": "Reward Scale",
         "internalName": "fRewardXPScale",
         "internalCategory": "Auto Unlock Terminals",
-        "description": "Множитель, применяемый к стандартному опыту в зависимости от уровня.",
+        "description": "Scale applied to the vanilla XP gained based on the lock level.",
         "minValue": 0,
         "maxValue": 2
       }
     ]
   },
   {
-    "name": "Перезарядка блокирует горячие клавиши оружия",
+    "name": "Reloading Prevents Weapon Hotkeys",
     "internalName": "bReloadingPreventsWeaponHotkeys",
-    "description": "Запрещать использование горячих клавиш оружия во время перезарядки.",
-    "category": "Игровой процесс"
+    "description": "Prevent using weapon hotkeys while reloading.",
+    "category": "Gameplay"
   },
   {
-    "name": "Скорость времени влияет на мини-игры",
+    "name": "Timescale Affects Minigames",
     "internalName": "bTimescaleAffectsMinigames",
-    "description": "Масштабировать скорость мини-игр глобальным множителем времени.",
-    "category": "Меню"
+    "description": "Scale minigame speed by the global time multiplier.",
+    "category": "Menus"
   },
   {
-    "name": "Водные источники показывают H2O",
+    "name": "Water Sources Show H2O",
     "internalName": "bWaterSourcesShowH2O",
-    "description": "Показывать восстанавливаемое H2O вместо HP при просмотре водных источников.",
+    "description": "Show the H2O restored instead of HP when viewing water sources.",
     "category": "HUD",
     "subsettings": [
       {
-        "name": "Требовать удержания Shift",
+        "name": "Require holding Shift",
         "internalName": "bRequireShiftHeld",
         "internalCategory": "Water Sources Show H2O",
-        "description": "Требовать удержания клавиши Shift для просмотра восстанавливаемого H2O."
+        "description": "Require the shift key to be held to view the H2O restored."
       }
     ]
   },
   {
-    "name": "Tab закрывает Пип-Бой из меню клавиш и конечностей",
+    "name": "Tab Closes Пип-Бой From Key And Limb Menus",
     "internalName": "bTabClosesPipboyFromKeyAndLimbMenus",
-    "description": "Закрывать Пип-Бой клавишей Tab внутри подменю 'Клавиши инвентаря' и выбора конечностей в статистике.",
-    "category": "Меню"
+    "description": "Make tab close the Пип-Бой from within the Inventory keys and Stats limb selection submenus.",
+    "category": "Menus"
   },
   {
-    "name": "Призывать напарников из меню карты",
+    "name": "Summon Companions In Map Menu",
     "internalName": "bMapSelectableCompanions",
-    "description": "Разрешить кликать по нанятым напарникам на карте, чтобы призвать их.",
-    "category": "Игровой процесс",
+    "description": "Allow clicking on hired companions in the map to summon them.",
+    "category": "Gameplay",
     "subsettings": [
       {
         "type": "input",
-        "name": "Текст 'Призвать всех'",
+        "name": "Summon All Text",
         "internalName": "sSummonAll",
         "internalCategory": "Map Selectable Companions",
-        "description":  "Текст на кнопке призыва всех, когда у вас несколько напарников."
+        "description":  "Text shown on the summon all button when you have multiple companions."
       },
       {
-        "name": "Разрешить призыв без сознания",
+        "name": "Allow summoning unconsious",
         "internalName": "bAllowSummonUnconsious",
         "internalCategory": "Map Selectable Companions",
-        "description": "Разрешить призывать напарников без сознания."
+        "description": "Allow summoning unconsious companions."
       }
     ]
   },
   {
-    "name": "Выносливость масштабирует мин. высоту урона от падения",
+    "name": "Endurance Scales Min Fall Height",
     "internalName": "bEnduranceScalesMinFallHeight",
-    "description": "Масштабировать минимальную высоту урона от падения по Выносливости. Формула: fJumpFallHeightMin * (1 + (fBaseBonus + (endurance - 5) * fEnduranceMult))",
-    "category": "Игровой процесс",
+    "description": "Scale player minimum fall damage height by endurance. Formula: fJumpFallHeightMin * (1 + (fBaseBonus + (endurance - 5) * fEnduranceMult))",
+    "category": "Gameplay",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Базовый бонус",
+        "name": "Base Bonus",
         "internalName": "fBaseBonus",
         "internalCategory": "Endurance Scales Min Fall Height",
-        "description": "Базовый множитель бонуса высоты.",
+        "description": "Base height multiplier bonus.",
         "minValue": 0,
         "maxValue": 1
       },
       {
         "type": "slider",
-        "name": "Множитель выносливости",
+        "name": "Endurance multiplier",
         "internalName": "fEnduranceMult",
         "internalCategory": "Endurance Scales Min Fall Height",
-        "description": "Множитель высоты падения за каждый пункт выносливости выше 5.",
+        "description": "Fall height multiplier per endurance point over 5.",
         "minValue": 0,
         "maxValue": 1
       }
     ]
   },
   {
-    "name": "Прыжок плывет вверх",
+    "name": "Jump Swims Upwards",
     "internalName": "bJumpSwimsUpwards",
-    "description": "Прыжок под водой дает возможность плыть вверх.",
-    "category": "Игровой процесс",
+    "description": "Make jumping swim upwards while underwater.",
+    "category": "Gameplay",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Множитель скорости",
+        "name": "Speed Scale",
         "internalName": "fSpeedScale",
         "internalCategory": "Jump Swims Upwards",
-        "description": "Скорость движения вверх/вниз.",
+        "description": "Speed of up/downwards movement.",
         "minValue": 0,
         "maxValue": 2
       },
       {
-        "name": "Плыть при автоходьбе",
+        "name": "Float During Autowalk",
         "internalName": "bSwimUpWhileAutowalking",
         "internalCategory": "Jump Swims Upwards",
-        "description": "Автоматически плыть вверх, если включена автоходьба."
+        "description": "Automatically swim upwards if automove is enabled."
       }
     ]
   },
   {
-    "name": "Броня вызывает погружение",
+    "name": "Armor Causes Sinking",
     "internalName": "bArmorCausesSinking",
-    "description": "Заставлять игрока тонуть, если броня тяжелая.",
-    "category": "Игровой процесс",
+    "description": "Make player sink if armor is heavy.",
+    "category": "Gameplay",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Множитель тяжелой брони",
+        "name": "Heavy Rate",
         "internalName": "fRateHeavy",
         "internalCategory": "Armor Causes Sinking",
         "minValue": 0,
@@ -8773,7 +8773,7 @@
       },
       {
         "type": "slider",
-        "name": "Множитель средней брони",
+        "name": "Medium Rate",
         "internalName": "fRateMedium",
         "internalCategory": "Armor Causes Sinking",
         "minValue": 0,
@@ -8781,7 +8781,7 @@
       },
       {
         "type": "slider",
-        "name": "Множитель легкой брони",
+        "name": "Light Rate",
         "internalName": "fRateLight",
         "internalCategory": "Armor Causes Sinking",
         "minValue": 0,
@@ -8789,7 +8789,7 @@
       },
       {
         "type": "slider",
-        "name": "Множитель без брони",
+        "name": "No Armor Rate",
         "internalName": "fRateNone",
         "internalCategory": "Armor Causes Sinking",
         "minValue": 0,
@@ -8798,269 +8798,269 @@
     ]
   },
   {
-    "name": "Меню статистики показывает славу/позор репутации",
+    "name": "Stats Menu Shows Reputation Fame/Infamy",
     "internalName": "bReputationShowsFameInfamy",
-    "description": "Показывать значения славы и позора в меню статистики.",
-    "category": "Меню",
+    "description": "Show fame and infamy values in the stats menu.",
+    "category": "Menus",
     "subsettings": [
       {
-        "name": "Показывать процент",
+        "name": "Show Percentage",
         "internalName": "bPercentage",
         "internalCategory": "Reputation Shows Fame",
-        "description": "Показывать славу/позор в процентах от максимальной репутации."
+        "description": "Show fame/infamy as a percentage of the max reputation."
       },
       {
         "type": "input",
-        "name": "Слава",
+        "name": "Fame",
         "internalName": "sFame",
         "internalCategory": "Reputation Shows Fame",
-        "description": "Название показателя 'Слава'."
+        "description": "Name for Fame stat."
       },
       {
         "type": "input",
-        "name": "Позор",
+        "name": "Infamy",
         "internalName": "sInfamy",
         "internalCategory": "Reputation Shows Fame",
-        "description": "Название показателя 'Позор'."
+        "description": "Name for Infamy stat."
       }
     ]
   },
   {
-    "name": "Подтверждение 'Починить все'",
+    "name": "Repair All Confirmation",
     "internalName": "bRepairAllConfirmation",
-    "description": "Добавлять подтверждение при выборе 'Починить все' в меню ремонта.",
-    "category": "Меню",
+    "description": "Add a confirmation when selecting 'Repair All' in the repair services menu.",
+    "category": "Menus",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Порог цены",
+        "name": "Price Threshold",
         "internalName": "iPriceThreshold",
         "internalCategory": "Repair All Confirmation",
-        "description": "Ремонты дешевле этого значения не требуют подтверждения.",
+        "description": "Repairs costing less than this amount won't ask for confirmation.",
         "minValue": 0,
         "maxValue": 2000
       },
       {
         "type": "input",
-        "name": "Сообщение подтверждения",
+        "name": "Confirmation Message",
         "internalName": "sMessage",
         "internalCategory": "Repair All Confirmation"
       }
     ]
   },
   {
-    "name": "Предотвращать зависимость NPC",
+    "name": "Prevent NPC Addiction",
     "internalName": "bPreventNPCAddiction",
-    "description": "Предотвращать получение NPC статуса зависимости.",
-    "category": "Игровой процесс"
+    "description": "Prevent NPC gaining addiction status effects.",
+    "category": "Gameplay"
   },
   {
-    "name": "Не приближать камеру в диалоге",
+    "name": "No Dialogue Zoom",
     "internalName": "bNoDialogueZoom",
-    "description": "Предотвращать приближение камеры при входе в диалог.",
-    "category": "Игровой процесс"
+    "description": "Prevent the camera zooming in when entering dialogue.",
+    "category": "Gameplay"
   },
   {
-    "name": "Раздельные эффекты алкоголя",
+    "name": "Separate Alcohol Effects",
     "internalName": "bSeparateAlcoholEffects",
-    "description": "Разрешать суммирование эффектов разных алкогольных напитков.",
-    "category": "Игровой процесс"
+    "description": "Allow using different alcohols to stack their effects.",
+    "category": "Gameplay"
   },
   {
-    "name": "Режим бога предотвращает анимации заклинивания",
+    "name": "God Mode Prevents Jam Anims",
     "internalName": "bGodModePreventsJamAnims",
-    "description": "Предотвращать анимации заклинивания оружия у игрока в режиме бога.",
-    "category": "Игровой процесс"
+    "description": "Prevent player weapon jam anims in godmode.",
+    "category": "Gameplay"
   },
   {
-    "name": "Масштабирование громкости оружия",
+    "name": "Scale Weapon Volume",
     "internalName": "bScaleWeaponVolume",
-    "description": "Разрешать масштабирование громкости звуков выстрелов игрока/NPC.",
-    "category": "Игровой процесс",
+    "description": "Allow scaling player/NPC weapon fire sound volume.",
+    "category": "Gameplay",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Громкость игрока",
+        "name": "Player Volume",
         "internalName": "fPlayerScale",
         "internalCategory": "Weapon Volume Scaling",
-        "description": "Масштаб, применяемый к звукам выстрелов игрока.",
+        "description": "Scale applied to player weapon fire sounds.",
         "minValue": 0,
         "maxValue": 1
       },
       {
         "type": "slider",
-        "name": "Громкость NPC",
+        "name": "Non-Player Volume",
         "internalName": "fNonPlayerScale",
         "internalCategory": "Weapon Volume Scaling",
-        "description": "Масштаб, применяемый к звукам выстрелов NPC.",
+        "description": "Scale applied to NPC weapon fire sounds.",
         "minValue": 0,
         "maxValue": 1
       }
     ]
   },
   {
-    "name": "Индикатор взрывоопасных разрушаемых объектов",
+    "name": "Exploding Destructible Indicator",
     "internalName": "bExplodingDestructibleIndicator",
-    "description": "Показывать взрывоопасные разрушаемые объекты на индикаторе гранат.",
+    "description": "Show explosive destructibles on the grenade indicator.",
     "category": "HUD"
   },
   {
-    "name": "VATS игнорирует невзрывные снаряды",
+    "name": "VATS Ignore Non-explosive Projectiles",
     "internalName": "bVATSIgnoreNonExplosiveProjectiles",
-    "description": "Предотвращать нацеливание на невзрывные снаряды в VATS.",
-    "category": "Игровой процесс"
+    "description": "Prevent targeting non-explosive projectiles in VATS.",
+    "category": "Gameplay"
   },
   {
-    "name": "Минимальная длительность лечения сном",
+    "name": "Sleep Healing Min Duration",
     "internalName": "bSleepHealingMinDuration",
-    "description": "Требовать спать определенное время, прежде чем здоровье восстановится на чужих кроватях.",
-    "category": "Игровой процесс",
+    "description": "Require sleeping for some time before health is restored on unowned beds.",
+    "category": "Gameplay",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Минимальная длительность",
+        "name": "Min Duration",
         "internalName": "iMinDuration",
         "internalCategory": "Sleep Healing",
-        "description": "Минимальные часы сна до восстановления игрока.",
+        "description": "Minimum sleep hours before player is healed.",
         "minValue": 1,
         "maxValue": 20
       },
       {
-        "name": "Прочая статистика требует длительность сна",
+        "name": "Misc Stat Requires Sleep Duration",
         "internalName": "bMiscStatRequiresSleepDuration",
         "internalCategory": "Sleep Healing",
-        "description": "Увеличивать показатель 'сколько раз спал' только если спать не менее минимальной длительности."
+        "description": "Only increase the 'times slept' misc stat if you sleep for the min duration."
       }
     ]
   },
   {
-    "name": "Использовать место попадания в кинематографических киллкамах",
+    "name": "Use Hit Location In Cinematic Killcams",
     "internalName": "bUseHitLocationInCinematicKillcams",
-    "description": "Заставлять (не VATS) кинематографический киллкам фокусироваться на пораженной части тела.",
-    "category": "Разное"
+    "description": "Make the (non-VATS) cinematic killcam focus on the hit body part.",
+    "category": "Misc"
   },
   {
-    "name": "Масштабирование громкости радио",
+    "name": "Scale Radio Volume",
     "internalName": "bScaleRadioVolume",
-    "description": "Масштабировать громкость радио-музыки и разговоров отдельно.",
-    "category": "Разное",
+    "description": "Scale the volume of radio music and conversations independently.",
+    "category": "Misc",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Множитель музыки",
+        "name": "Music Scale",
         "internalName": "fMusicScale",
         "internalCategory": "Radio Volume Scaling",
-        "description": "Множитель, применяемый к громкости музыки радио.",
+        "description": "Scale applied to radio music volume.",
         "minValue": 0.0,
         "maxValue": 2.0
       },
       {
         "type": "slider",
-        "name": "Множитель в диалогах",
+        "name": "Dialogue Scale",
         "internalName": "fDialogueScale",
         "internalCategory": "Radio Volume Scaling",
-        "description": "Множитель, применяемый к громкости радио в диалогах.",
+        "description": "Scale applied to radio dialogue volume.",
         "minValue": 0.0,
         "maxValue": 2.0
       }
     ]
   },
   {
-    "name": "Метательное оружие в VATS использует видимость цели",
+    "name": "VATS Throwables Use Target Visibility",
     "internalName": "bVATSThrowablesUseVisibility",
-    "description": "Масштабировать проценты попадания метательными (кроме гранат) в зависимости от видимости части тела.",
-    "category": "Игровой процесс"
+    "description": "Scale thrown (non-grenade) hit percentages based on body part visibility.",
+    "category": "Gameplay"
   },
   {
-    "name": "VATS перестает сопровождать мертвые цели",
+    "name": "VATS Stop Following Dead Targets",
     "internalName": "bVATSStopFollowingDeadTargets",
-    "description": "Прекращать поворот для сопровождения целей после их смерти.",
-    "category": "Разное"
+    "description": "Stop rotating to follow targets once they are dead.",
+    "category": "Misc"
   },
   {
-    "name": "Заменить 'Помощь' в паузе на консоль",
+    "name": "Replace Pause Menu Help With Console",
     "internalName": "bReplaceHelpWithConsole",
-    "description": "Заменять кнопку 'Помощь' в меню паузы кнопкой открытия консоли.",
-    "category": "Разное"
+    "description": "Replace the 'Help' pause menu button with a button for opening the console.",
+    "category": "Misc"
   },
   {
-    "name": "Автоматическое чтение заметок",
+    "name": "Auto-Read Notes",
     "internalName": "bAutoReadNotes",
-    "description": "Автоматически открывать меню заметок, когда заметки добавлены игроку в диалогах, контейнерах или торговле. Требуется Book Menu Restored.",
-    "category": "Разное",
+    "description": "Automatically open the note menu when notes are added to the player in dialog, containers or barter. Requires Book Menu Restored.",
+    "category": "Misc",
     "subsettings": [
       {
-        "name": "Поддержка голозаписей",
+        "name": "Holotape Support",
         "internalName": "bHolotapeSupport",
         "internalCategory": "Auto Read Notes",
-        "description": "Автоматически воспроизводить голозаписи (после окончания диалога)."
+        "description": "Automatically play holotapes (after dialog ends)."
       },
       {
         "type":  "input",
-        "name": "Поддержка голозаписей",
+        "name": "Holotape Support",
         "internalName": "sHolotapeMessageTitle",
         "internalCategory": "Auto Read Notes",
-        "description": "Заголовок в окне подтверждения голозаписи."
+        "description": "Title shown in the holotape confirmation messagebox."
       },
       {
         "type":  "input",
-        "name": "Поддержка голозаписей",
+        "name": "Holotape Support",
         "internalName": "sHolotapeMessageText",
         "internalCategory": "Auto Read Notes",
-        "description": "Текст в окне подтверждения голозаписи (оставьте пустым, чтобы пропустить окно)."
+        "description": "Text shown in the holotape confirmation messagebox (leave blank to skip messagebox)."
       }
     ]
   },
   {
-    "name": "Враги отдают приоритет игроку",
+    "name": "Hostiles Prioritize Player",
     "internalName": "bHostilesPrioritizePlayer",
-    "description": "Принудительно заставлять атакующих отдавать приоритет игроку над напарниками.",
-    "category": "Игровой процесс",
+    "description": "Force attackers to prioritize player over companions.",
+    "category": "Gameplay",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Шанс переключения на игрока при начале боя",
+        "name": "Start-Combat Swap to Player Chance",
         "internalName": "fSwapToPlayerChanceStartCombat",
         "internalCategory": "Hostiles Prioritize Player",
-        "description": "Шанс заменить напарника на игрока при начале боя.",
+        "description": "Chance to override a companion with player on combat start.",
         "minValue": 0.0,
         "maxValue": 1.0
       },
       {
         "type": "slider",
-        "name": "Шанс переключения на игрока во время боя",
+        "name": "Mid-Combat Swap to Player Chance",
         "internalName": "fSwapToPlayerChanceMidCombat",
         "internalCategory": "Hostiles Prioritize Player",
-        "description": "Шанс заменить напарника на игрока во время боя.",
+        "description": "Chance to override a companion with player during combat.",
         "minValue": 0.0,
         "maxValue": 1.0
       },
       {
         "type": "slider",
-        "name": "Требуемый уровень обнаружения игрока",
+        "name": "Required Player Detection Level",
         "internalName": "iPlayerDetectionThreshold",
         "internalCategory": "Hostiles Prioritize Player",
-        "description": "Уровень обнаружения, требуемый для переключения на прицеливание игрока.",
+        "description": "Detection level required to switch to targeting the player.",
         "minValue": -100,
         "maxValue": 100
       }
     ]
   },
   {
-    "name": "Показывать отмеченные навыки полужирным",
+    "name": "Show Tagged Skills in Bold",
     "internalName": "bEmboldenTagSkills",
-    "description": "Показывать отмеченные навыки полужирным в меню статистики.",
-    "category": "Меню"
+    "description": "Show tag skills in bold in the Stats menu.",
+    "category": "Menus"
   },
   {
-    "name": "Макс. отметок на компасе HUD",
+    "name": "HUD Max Compass Ticks",
     "internalName": "iHUDMaxCompassNPCTicks",
     "category": "HUD",
-    "description": "Установить максимальное число NPC на компасе, переопределяя стандартный параметр игры и позволяя больше стандартного максимума 10.",
+    "description": "Set the maximum NPC to show on compass, overriding the vanilla gamesetting and allowing more than the vanilla maximum of 10.",
     "subsettings": [
       {
         "type": "slider",
-        "name": "Максимум NPC на компасе",
+        "name": "Max NPC on Compass",
         "internalName": "iHUDMaxCompassNPCTicks",
         "internalCategory": "Tweaks",
         "minValue": 0,
@@ -9069,13 +9069,13 @@
     ]
   },
   {
-    "name": "Пользовательский формат даты",
+    "name": "Custom Date Format",
     "internalName": "iDateFormat",
     "category": "HUD",
-    "description": "Использовать пользовательский формат даты для Пип-Боя и меню сна/ожидания.",
+    "description": "Use a custom date format for the Пип-Бой and Sleep/Wait menus.",
     "subsettings": [
       {
-        "name": "Формат даты",
+        "name": "Date Format",
         "internalName": "iDateFormat",
         "internalCategory": "Tweaks",
         "description": "",
@@ -9097,9 +9097,9 @@
     ]
   },
   {
-    "name": "Восстановить звук запертой двери",
+    "name": "Restore Locked Door Sound",
     "internalName": "bRestoreLockedDoorSound",
-    "description": "Воспроизводить неиспользуемый звук DRSLocked при активации замка, который нельзя открыть (Недоступно).",
-    "category": "Разное"
+    "description": "Play the unused DRSLocked sound when activating a lock you can't open.",
+    "category": "Misc"
   }
 ]
