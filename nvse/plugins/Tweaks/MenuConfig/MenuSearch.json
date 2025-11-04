@@ -1,0 +1,82 @@
+[
+  {
+    "name":"Поиск в меню",
+    "internalName":"bMenuSearch",
+    "description":"Добавляет поиск по Ctrl+F в различных меню.",
+    "category":"Меню",
+    "subsettings":[
+      {
+        "name":"Добавить в меню карты",
+        "internalName":"bMapMenu",
+        "internalCategory":"Menu Search",
+        "description":"Добавить в меню карты (Локальная/Мировая, Задания, Заметки, Испытания и Радио)."
+      },
+      {
+        "name":"Добавить в меню инвентаря",
+        "internalName":"bInventoryMenu",
+        "internalCategory":"Menu Search",
+        "description":"Добавить в меню инвентаря (Пип-Бой)."
+      },
+      {
+        "name":"Добавить в меню статистики",
+        "internalName":"bStatsMenu",
+        "internalCategory":"Menu Search",
+        "description":"Добавить в меню статистики (Эффекты, Навыки, Перки, Репутации, Прочая статистика)."
+      },
+      {
+        "name":"Добавить в меню торговли",
+        "internalName":"bBarterMenu",
+        "internalCategory":"Menu Search",
+        "description":"Добавить в меню торговли."
+      },
+      {
+        "name":"Добавить в меню контейнера",
+        "internalName":"bContainerMenu",
+        "internalCategory":"Menu Search",
+        "description":"Добавить в меню контейнера."
+      },
+      {
+        "name":"Добавить в меню повышения уровня",
+        "internalName":"bLevelUpMenuSearch",
+        "internalCategory":"Menu Search",
+        "description":"Добавить в меню повышения уровня (перки)."
+      },
+      {
+        "name":"Добавить в меню рецептов",
+        "internalName":"bRecipeMenuSearch",
+        "internalCategory":"Menu Search",
+        "description":"Добавить в меню рецептов."
+      },
+      {
+        "name":"Добавить в меню сохранения/загрузки",
+        "internalName":"bSaveMenuSearch",
+        "internalCategory":"Menu Search",
+        "description":"Добавить в меню сохранения/загрузки."
+      },
+      {
+        "name":"Снимать фильтр при закрытии поиска",
+        "internalName":"bRemoveFilterWhenClosingSearch",
+        "internalCategory":"Menu Search",
+        "description":"Обновлять меню при закрытии поиска (отключите, если хотите перемещаться по отфильтрованным меню горячими клавишами)."
+      },
+      {
+        "name":"Очищать ввод при повторном поиске",
+        "internalName":"bClearInputWhenReopeningSearch",
+        "internalCategory":"Menu Search",
+        "description":"Очищать строку ввода при фокусе на поиске, принудительно 1 если включено снятие фильтра при закрытии."
+      },
+      {
+        "name":"Поиск по заданиям включает цели",
+        "internalName":"bQuestIncludeObjectives",
+        "internalCategory":"Menu Search",
+        "description":"Также искать текст целей при поиске заданий."
+      },
+      {
+        "name":"Поиск по заданиям включает выполненные цели",
+        "internalName":"bQuestIncludeCompletedObjectives",
+        "internalCategory":"Menu Search",
+        "description":"Включать выполненные цели, если включено 'Поиск по заданиям включает цели'."
+      }
+    ]
+  }
+]

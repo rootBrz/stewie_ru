@@ -1,0 +1,81 @@
+[
+  {
+    "name":"Двойной прыжок",
+    "internalName":"bDoubleJump",
+    "description":"Разрешает прыгать в воздухе.",
+    "category":"Игровой процесс",
+    "subsettings":[
+      {
+        "type":"slider",
+        "name":"Макс. прыжков в воздухе",
+        "internalName":"iMaxJumpCount",
+        "internalCategory":"Double Jumping",
+        "description":"Максимум дополнительных прыжков.",
+        "minValue":0,
+        "maxValue":8
+      },
+      {
+        "type":"slider",
+        "name":"Масштаб высоты прыжка в воздухе",
+        "internalName":"fJumpHeightScale",
+        "internalCategory":"Double Jumping",
+        "description":"Масштаб, применяемый к прыжкам в воздухе.",
+        "minValue":0,
+        "maxValue":2
+      },
+      {
+        "type":"slider",
+        "name":"Стоимость ОД",
+        "internalName":"iAPCost",
+        "internalCategory":"Double Jumping",
+        "description":"Стоимость очков действия для прыжка в воздухе.",
+        "minValue":0,
+        "maxValue":100
+      },
+      {
+        "type":"input",
+        "name":"Звук прыжка",
+        "internalName":"sJumpSound",
+        "internalCategory":"Double Jumping",
+        "description":"Звук при прыжке в воздухе."
+      },
+      {
+        "type":"slider",
+        "name":"Громкость прыжка",
+        "internalName":"fJumpVolume",
+        "internalCategory":"Double Jumping",
+        "description":"Время (в секундах) после падения, в течение которого первые прыжки не увеличивают счетчик.",
+        "minValue":0,
+        "maxValue":2
+      },
+      {
+        "type":"slider",
+        "name":"Таймер в воздухе",
+        "internalName":"fMidairTimer",
+        "internalCategory":"Double Jumping",
+        "description":"Время (в секундах) после падения, в течение которого первые прыжки не увеличивают счетчик.",
+        "minValue":0,
+        "maxValue":2
+      },
+      {
+        "name":"Сохранять высоту падения",
+        "internalName":"bKeepHeight",
+        "internalCategory":"Double Jumping",
+        "description": "Не сбрасывать высоту урона от падения при прыжке в воздухе."
+      },
+      {
+        "name":"Требуется силовая броня",
+        "internalName":"bRequirePowerArmor",
+        "internalCategory":"Double Jumping",
+        "description": "Требуется корпус силовой брони для двойного прыжка."
+      },
+      {
+        "type":"input",
+        "name":"Требуемый перк",
+        "internalName":"sPerkEditorID",
+        "internalCategory":"Double Jumping",
+        "description": "Editor ID перка, необходимого для двойного прыжка."
+      }
+    ]
+  }
+]

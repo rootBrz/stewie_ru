@@ -1,0 +1,69 @@
+[
+  {
+    "name":"Ручная перезарядка",
+    "internalName":"bManualReload",
+    "description":"Запрещает автоматическую перезарядку при опустошении магазина.",
+    "category":"Combat",
+    "subsettings":[
+      {
+        "type":"slider",
+        "name":"Порог размера магазина для авто-перезарядки",
+        "internalName":"iAutoReloadClipSizeThreshold",
+        "internalCategory":"Manual Reload",
+        "description":"Если размер магазина меньше этого, автоматически перезаряжать при 0 патронах.",
+        "minValue":0,
+        "maxValue":200
+      },
+      {
+        "name":"Не перезаряжать при подборе патронов",
+        "internalName":"bNoReloadOnAmmoPickup",
+        "internalCategory":"Manual Reload",
+        "description":"Предотвращать авто-перезарядку при подборе боеприпасов, если оружие пусто."
+      },
+      {
+        "name":"Без анимации выстрела с пустым магазином",
+        "internalName":"bPreventFiringAnimWhenEmpty",
+        "internalCategory":"Manual Reload",
+        "description":"Предотвращать анимацию выстрела при пустом магазине."
+      },
+      {
+        "name":"Автоматическое оружие воспроизводит звук пустого магазина",
+        "internalName":"bAutoWeaponsPlayEmptyClipSound",
+        "internalCategory":"Manual Reload",
+        "description":"Воспроизводить звук пустого магазина, когда он опустошен для автоматического оружия."
+      },
+      {
+        "name":"Только автоматическое оружие",
+        "internalName":"bAutoWeaponsOnly",
+        "internalCategory":"Manual Reload",
+        "description":"Ручная перезарядка только для автоматического оружия. Полуавтоматическое продолжит авто-перезаряжаться."
+      },
+      {
+        "name":"Выстрел при пустом магазине перезаряжает",
+        "internalName":"bReloadWhenFiringWithEmptyClip",
+        "internalCategory":"Manual Reload",
+        "description":"Перезаряжать при попытке выстрела с пустым магазином."
+      }
+    ]
+  },
+  {
+    "name":"Память количества боеприпасов",
+    "internalName":"bRememberWeaponAmmos",
+    "description":"Запоминать тип и количество боеприпасов (опционально) для всего оружия игрока. Данные хранятся в стандартном сохранении и удаляются при загрузке без твика или удалении/выгрузке оружия.",
+    "category":"Игровой процесс",
+    "subsettings":[
+      {
+        "name":"Забывать при передаче",
+        "internalName":"bInventoryOnly",
+        "internalCategory":"Remember Weapon Ammos",
+        "description":"Забывать сохраненные боеприпасы/тип при выбрасывании или передаче оружия (для уменьшения сохранения)."
+      },
+      {
+        "name":"Запоминать количество боеприпасов",
+        "internalName":"bIncludeCount",
+        "internalCategory":"Remember Weapon Ammos",
+        "description":"Запоминать количество, а также тип (у оружия с регенерирующимися патронами количество сохраняется всегда)."
+      }
+    ]
+  }
+]

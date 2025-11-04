@@ -1,0 +1,57 @@
+[
+  {
+    "name":"Подготовка гранат",
+    "internalName":"bCookableGrenades",
+    "description":"Удерживание гранаты уменьшает таймер детонации.",
+    "category":"Combat",
+    "subsettings":[
+      {
+        "name":"Без увеличения дальности броска",
+        "internalName":"bDisableGrenadeDistanceIncrease",
+        "internalCategory":"Cookable Grenades",
+        "description":"Всегда бросать гранаты на одну и ту же дистанцию независимо от времени удержания."
+      },
+      {
+        "name":"Передержанныегранаты взрываются",
+        "internalName":"bOvercookedGrenadesExplode",
+        "internalCategory":"Cookable Grenades",
+        "description":"Передержанные гранаты взрываются у вас в руке."
+      },
+      {
+        "type":"slider",
+        "name":"Минимальное время детонации",
+        "internalName":"fMinGrenadeTimer",
+        "internalCategory":"Cookable Grenades",
+        "description":"Минимальное время детонации для брошенных гранат.",
+        "minValue":0,
+        "maxValue":100
+      },
+      {
+        "name":"Звук готовки",
+        "internalName":"bPlaySound",
+        "internalCategory":"Cookable Grenades",
+        "description":"Проигрывать звук каждую секунду удержания гранаты."
+      },
+      {
+        "name":"Обратный отсчет",
+        "internalName":"bTimerCountdown",
+        "internalCategory":"Cookable Grenades",
+        "description":"Проигрывать звук в последние 3 секунды таймера."
+      },
+      {
+        "type":"input",
+        "name":"ID звука",
+        "internalName":"sSoundName",
+        "internalCategory":"Cookable Grenades",
+        "description":"Editor ID звука для воспроизведения."
+      },
+      {
+        "type":"input",
+        "name":"ID звука на последнюю секунду",
+        "internalName":"sSoundNameAlt",
+        "internalCategory":"Cookable Grenades",
+        "description":"Editor ID звука для последней секунды при использовании обратного отсчета."
+      }
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "name":"Встроенные стандартные функции",
+    "internalName":"bInlineVanillaFunctions",
+    "description":"Оптимизирует наиболее частые/дорогие (в производительности) функции в разных сценариях, снижая время сохранения/загрузки и улучшая общую производительность. Если используете 'New Vegas Tick Fix', убедитесь, что версия обновлена (v9.6+).",
+    "category":"Исправления",
+    "external": "",
+    "subsettings": [
+      {
+        "name":"Разное",
+        "internalName":"bMisc",
+        "internalCategory":"Inlines",
+        "description":"Общие инлайны."
+      },
+      {
+        "name":"Пути",
+        "internalName":"bPathing",
+        "internalCategory":"Inlines",
+        "description":"Инлайны путей."
+      },
+      {
+        "name":"Сохранение/Загрузка",
+        "internalName":"bSaveLoad",
+        "internalCategory":"Inlines",
+        "description":"Инлайны сохранения/загрузки."
+      },
+      {
+        "name":"Меню",
+        "internalName":"bMenus",
+        "internalCategory":"Inlines",
+        "description":"Инлайны интерфейса."
+      },
+      {
+        "name":"Приведения типов",
+        "internalName":"bDynamicCasts",
+        "internalCategory":"Inlines",
+        "description":"Инлайны приведения типов."
+      },
+      {
+        "name":"NPC и процессы",
+        "internalName":"bProcess",
+        "internalCategory":"Inlines",
+        "description":"Инлайны, связанные с NPC и их процессами."
+      },
+      {
+        "name":"Аудио",
+        "internalName":"bAudio",
+        "internalCategory":"Inlines",
+        "description":"Инлайны аудио."
+      },
+      {
+        "name":"Скрипты",
+        "internalName":"bScripts",
+        "internalCategory":"Inlines",
+        "description":"Инлайны движка скриптов."
+      },
+      {
+        "name":"Рендеринг",
+        "internalName":"bRendering",
+        "internalCategory":"Inlines",
+        "description":"Инлайны рендера."
+      }
+    ]
+  }
+]

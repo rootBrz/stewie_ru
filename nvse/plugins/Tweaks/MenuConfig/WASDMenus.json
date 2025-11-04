@@ -1,0 +1,94 @@
+[
+  {
+    "name":"Управление меню WASD",
+    "internalName":"bUseWASDAsArrowKeys",
+    "description":"Разрешает использовать клавиши WASD в меню и пробел для подтверждения — не работает при конфликте с привязками меню. Рекомендуется вместе с VUI+ и опцией 'WASD Compatible'.",
+    "category":"Меню",
+    "subsettings":[
+      {
+        "name":"Всегда разрешать WASD",
+        "internalName":"bAlwaysAllowWASD",
+        "internalCategory":"Menu WASD",
+        "description":"Всегда разрешать клавиши WASD, игнорируя горячие клавиши WASD+E в XML меню."
+      },
+      {
+        "name":"Повтор нажатий WASD",
+        "internalName":"bWASDKeysRepeat",
+        "internalCategory":"Menu WASD",
+        "description":"Удерживание клавиш WASD повторяет действие, как стрелки."
+      },
+      {
+        "name":"Пробел не закрывает контейнеры",
+        "internalName":"bNoSpaceClosesContainer",
+        "internalCategory":"Menu WASD",
+        "description":"Запрещать закрытие контейнеров клавишей пробел."
+      },
+      {
+        "name":"Выделение в инвентаре всегда видно",
+        "internalName":"bInventorySelectionAlwaysVisible",
+        "internalCategory":"Menu WASD",
+        "description":"Предотвращать скрытие выделения инвентаря при активации предмета с клавиатуры."
+      },
+      {
+        "name":"Контейнеры по умолчанию справа",
+        "internalName":"bContainerDefaultToRightSide",
+        "internalCategory":"Menu WASD",
+        "description":"Делать правую сторону выбранной по умолчанию при открытии меню контейнера."
+      },
+      {
+        "name":"Shift масштабирует скорость зума карты",
+        "internalName":"bShiftScalesMapZoomSpeed",
+        "internalCategory":"Menu WASD",
+        "description":"Удерживание Shift масштабирует скорость зума."
+      },
+      {
+        "name":"Shift ускоряет прокрутку в контейнерах",
+        "internalName":"bShiftScalesContainerArrowKeys",
+        "internalCategory":"Menu WASD",
+        "description":"Удерживание Shift увеличивает скорость прокрутки стрелками в контейнерах."
+      },
+      {
+        "name":"Shift масштабирует колесо мыши",
+        "internalName":"bShiftScalesMousewheel",
+        "internalCategory":"Menu WASD",
+        "description":"Удерживание Shift увеличивает прокрутку колесом мыши в 4 раза для всех меню."
+      },
+      {
+        "name":"WASD в меню карты",
+        "internalName":"bMapMenuWASD",
+        "internalCategory":"Menu WASD",
+        "description":"Удерживание Alt позволяет WASD двигать карту, вверх/вниз — зум."
+      },
+      {
+        "name":"WASD карты центрирует прицел",
+        "internalName":"bMapMenuWASDCentersSelectionReticle",
+        "internalCategory":"Menu WASD",
+        "description":"Использование WASD в карте центрирует прицел выбора."
+      },
+      {
+        "name":"Выбор клавишей \"E\"",
+        "internalName":"bSelectWithEKey",
+        "internalCategory":"Menu WASD",
+        "description":"Заставлять клавишу 'E' работать как пробел в меню."
+      },
+      {
+        "name":"Tab возвращает в инвентарь",
+        "internalName":"bTabReturnsToInventory",
+        "internalCategory":"Menu WASD",
+        "description":"Заставлять Tab возвращать в инвентарь, а не закрывать Пип-Бой в меню модов оружия и ремонта."
+      },
+      {
+        "name":"Зацикленная прокрутка списка",
+        "internalName":"bListWraparound",
+        "internalCategory":"Menu WASD",
+        "description":"Переходить снизу вверх и сверху вниз при нажатии вверх/вниз в контейнере."
+      },
+      {
+        "name":"Автовыделение 'Продолжить' в главном меню",
+        "internalName":"bHighlightContinueAtMainMenu",
+        "internalCategory":"Menu WASD",
+        "description":"Автоматически выделять пункт 'Продолжить' в главном меню."
+      }
+    ]
+  }
+]
